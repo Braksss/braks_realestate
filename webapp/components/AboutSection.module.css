@@ -1,0 +1,15 @@
+.section {
+  @apply py-20 px-6;
+}
+.title {
+  @apply text-4xl font-bold tracking-tighter mb-6;
+}
+.paragraph {
+  @apply text-gray-600 text-lg mb-6;
+}
+.link {
+  @apply text-orange-500 font-semibold text-lg hover:underline;
+}
+.image {
+  @apply rounded-2xl shadow-xl w-full;
+}

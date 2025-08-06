@@ -1,0 +1,51 @@
+.heroBackground {
+  @apply absolute inset-0;
+}
+.heroBackground img {
+  @apply w-full h-full object-cover;
+}
+
+.textBubble {
+  @apply bg-white/20 backdrop-blur-xl p-10 rounded-3xl md:max-w-lg;
+}
+.textBubble h1 {
+  @apply text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6;
+}
+.textBubble p {
+  @apply text-lg mb-8 opacity-90;
+}
+.searchBar {
+  @apply bg-white rounded-full p-2 flex items-center shadow-lg;
+}
+.searchBar input {
+  @apply w-full bg-transparent text-gray-800 px-4 focus:outline-none;
+}
+.searchBar button {
+  @apply bg-orange-500 text-white rounded-full p-3 hover:bg-orange-600 transition-colors;
+}
+.imageCard {
+    @apply absolute bottom-10 right-10;
+}
+.imageCard > div {
+  @apply bg-white/90 backdrop-blur-xl p-6 rounded-2xl text-gray-800 shadow-2xl w-80;
+}
+.imageCard img {
+  @apply w-full h-48 object-cover rounded-xl mb-4;
+}
+.imageCard h3 {
+  @apply text-xl font-bold;
+}
+.imageCard p {
+  @apply text-gray-600 text-sm;
+}
+
+/* Styles pour la preuve sociale intégrée */
+.socialProof {
+  @apply mt-8 pt-6 border-t border-white/20;
+}
+.proofLogos {
+  @apply flex justify-center items-center gap-8 text-white/70;
+}
+.proofLogos svg {
+  @apply h-5;
+}

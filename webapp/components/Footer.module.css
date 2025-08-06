@@ -1,0 +1,6 @@
+.footer {
+  @apply py-10 text-center bg-gray-50 border-t border-gray-200;
+}
+.footer p {
+  @apply text-gray-600;
+}
