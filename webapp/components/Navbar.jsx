@@ -21,16 +21,13 @@ export function Navbar() {
         {/* Navigation pour ordinateur */}
         <div className={styles.desktopNav}>
           <Link href='/explorateur' className={styles.navLink}>Explorateur</Link>
-          {/* --- AJOUT DU LIEN VERS L'ESTIMATEUR --- */}
-          <Link href='/estimer' className={styles.navLink}>Estimer un bien</Link>
+          <Link href='/opportunites' className={styles.navLink}>Biens Off-Market</Link>
+          <Link href='/estimer' className={styles.navLink}>Estimer</Link>
           <Link href='/guides' className={styles.navLink}>Guides</Link>
-          <Link href='/#about' className={styles.navLink}>À Propos</Link>
         </div>
         
         <div className={styles.actions}>
           <a href='#' className={styles.ctaButton}>Se connecter</a>
-          
-          {/* Bouton pour le menu mobile */}
           <button 
             className={styles.mobileMenuButton} 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -45,10 +42,9 @@ export function Navbar() {
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <Link href='/explorateur' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Explorateur</Link>
-          {/* --- AJOUT DU LIEN VERS L'ESTIMATEUR --- */}
-          <Link href='/estimer' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Estimer un bien</Link>
+          <Link href='/opportunites' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Biens Off-Market</Link>
+          <Link href='/estimer' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Estimer</Link>
           <Link href='/guides' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Guides</Link>
-          <Link href='/#about' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>À Propos</Link>
         </div>
       )}
     </header>

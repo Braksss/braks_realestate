@@ -1,72 +1,64 @@
 "use client";
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import { ProjectWizard } from '@/components/ProjectWizard';
 import { DataHeatmapLayer } from '@/components/DataHeatmapLayer';
 import { LocationInfoPanel } from '@/components/LocationInfoPanel';
 import { MapLegend } from '@/components/MapLegend';
+import { OpportunityModal } from '@/components/OpportunityModal';
+import { biensDisponibles } from '@/data/biensDisponibles';
+import { MarkersLayer } from '@/components/MarkersLayer';
 
-// --- LE NOUVEL ALGORITHME D'INDICE D'OPPORTUNITÉ ---
 const calculateOpportunityIndex = (location, criteria, regionAverages) => {
-    // 1. Score de Compatibilité (Votre Projet) - Poids: 40%
-    let compatScore = 0;
+    let score = 0, maxScore = 0;
+    maxScore += criteria.weights.compatibility;
     if (criteria.profil && location.scores?.[criteria.profil]) {
-        compatScore = (location.scores[criteria.profil] / 10) * 100; // Normalise sur 100
+        score += (location.scores[criteria.profil] / 10) * criteria.weights.compatibility;
     }
-
-    // 2. Score de Valeur (Le Marché) - Poids: 30%
-    let valueScore = 0;
+    maxScore += criteria.weights.value;
     if (location.prixMoyenM2 < regionAverages.avgPrice) {
-        // Plus le prix est bas par rapport à la moyenne, meilleur est le score
-        valueScore = Math.min(100, (1 - (location.prixMoyenM2 / regionAverages.avgPrice)) * 200);
+        score += Math.min(100, (1 - (location.prixMoyenM2 / regionAverages.avgPrice)) * 200) / 100 * criteria.weights.value;
     }
-    
-    // 3. Score de Potentiel (Le Futur) - Poids: 30%
-    let potentialScore = 0;
+    maxScore += criteria.weights.potential;
     if (location.evolution5ans > regionAverages.avgEvolution) {
-        // Plus la croissance est forte par rapport à la moyenne, meilleur est le score
-        potentialScore = Math.min(100, (location.evolution5ans / regionAverages.avgEvolution) * 75);
+        score += Math.min(100, (location.evolution5ans / regionAverages.avgEvolution) * 75) / 100 * criteria.weights.potential;
     }
-    
-    // On applique les poids définis par l'utilisateur
-    const totalWeight = criteria.weights.compatibility + criteria.weights.value + criteria.weights.potential;
-    if (totalWeight === 0) return 0;
-    
-    const finalScore = 
-        (compatScore * criteria.weights.compatibility +
-         valueScore * criteria.weights.value +
-         potentialScore * criteria.weights.potential) / totalWeight;
-
-    return Math.round(finalScore);
+    if (maxScore === 0) return 0;
+    return Math.round((score / maxScore) * 100);
 };
 
-
 export default function MapView({ locations }) {
+    const searchParams = useSearchParams();
+    const locationSlugFromUrl = searchParams.get('location');
+
     const [criteria, setCriteria] = useState({
         profil: 'famille',
-        // NOUVEAU: Les poids pour l'algorithme !
-        weights: {
-            compatibility: 50, // L'utilisateur veut d'abord ce qui lui correspond
-            value: 25,         // Puis une bonne affaire
-            potential: 25,     // Et enfin un bon potentiel
-        }
+        weights: { compatibility: 50, value: 25, potential: 25 }
     });
     const [selectedLocation, setSelectedLocation] = useState(null);
+    const [modalLocation, setModalLocation] = useState(null);
+    
+    useEffect(() => {
+        if (locationSlugFromUrl) {
+            const locationToSelect = locations.find(loc => loc.slug === locationSlugFromUrl);
+            if (locationToSelect) {
+                setSelectedLocation(locationToSelect);
+            }
+        }
+    }, [locationSlugFromUrl, locations]);
 
-    // On calcule les moyennes de la région UNE SEULE FOIS
     const regionAverages = useMemo(() => {
         const total = locations.length;
         if (total === 0) return { avgPrice: 0, avgEvolution: 0 };
         const sumPrice = locations.reduce((acc, loc) => acc + loc.prixMoyenM2, 0);
         const sumEvolution = locations.reduce((acc, loc) => acc + loc.evolution5ans, 0);
-        return {
-            avgPrice: sumPrice / total,
-            avgEvolution: sumEvolution / total,
-        };
+        return { avgPrice: sumPrice / total, avgEvolution: sumEvolution / total };
     }, [locations]);
 
     const locationsWithScore = useMemo(() => {
+        if (!Array.isArray(locations)) return [];
         return locations.map(loc => ({
             ...loc,
             opportunityIndex: calculateOpportunityIndex(loc, criteria, regionAverages)
@@ -82,13 +74,20 @@ export default function MapView({ locations }) {
     const handleCriteriaChange = (name, value) => {
         if (name.startsWith('weight_')) {
             const weightName = name.split('_')[1];
-            setCriteria(prev => ({
-                ...prev,
-                weights: { ...prev.weights, [weightName]: value }
-            }));
+            setCriteria(prev => ({ ...prev, weights: { ...prev.weights, [weightName]: value } }));
         } else {
             setCriteria(prev => ({ ...prev, [name]: value }));
         }
+    };
+    
+    const opportunityForModal = useMemo(() => 
+        modalLocation ? biensDisponibles.find(b => b.locationSlug === modalLocation.slug) : null,
+        [modalLocation]
+    );
+
+    const handleFindOpportunities = (location) => {
+        setModalLocation(location);
+        setSelectedLocation(null);
     };
 
     return (
@@ -99,11 +98,25 @@ export default function MapView({ locations }) {
             <main className="relative flex-grow h-full">
                 <MapContainer center={[42.02, 3.06]} zoom={9} scrollWheelZoom={true} style={{ height: '100%', width: '100%', zIndex: 0, backgroundColor: '#f0f0f0' }}>
                     <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png" attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>' />
-                    <DataHeatmapLayer key={JSON.stringify(criteria)} locations={locationsWithScore} onZoneClick={setSelectedLocation} dataKey="opportunityIndex" range={scoreRange} />
+                    <DataHeatmapLayer key={`geojson-${JSON.stringify(criteria)}`} locations={locationsWithScore} onZoneClick={setSelectedLocation} dataKey="opportunityIndex" range={scoreRange} />
+                    <MarkersLayer locations={locationsWithScore} onZoneClick={setSelectedLocation} />
                 </MapContainer>
                 <MapLegend range={scoreRange} unit="%" title="Indice d'Opportunité" />
             </main>
-            <LocationInfoPanel location={selectedLocation} onClose={() => setSelectedLocation(null)} displayScore={selectedLocation ? calculateOpportunityIndex(selectedLocation, criteria, regionAverages) : null} regionAverages={regionAverages} />
+            <LocationInfoPanel 
+                location={selectedLocation} 
+                onClose={() => setSelectedLocation(null)} 
+                displayScore={selectedLocation ? calculateOpportunityIndex(selectedLocation, criteria, regionAverages) : null} 
+                regionAverages={regionAverages}
+                onFindOpportunities={handleFindOpportunities}
+            />
+            {modalLocation && (
+                <OpportunityModal
+                    location={modalLocation}
+                    bien={opportunityForModal}
+                    onClose={() => setModalLocation(null)}
+                />
+            )}
         </>
     );
 }
