@@ -21,6 +21,8 @@ export function Navbar() {
         {/* Navigation pour ordinateur */}
         <div className={styles.desktopNav}>
           <Link href='/explorateur' className={styles.navLink}>Explorateur</Link>
+          {/* --- AJOUT DU LIEN VERS L'ESTIMATEUR --- */}
+          <Link href='/estimer' className={styles.navLink}>Estimer un bien</Link>
           <Link href='/guides' className={styles.navLink}>Guides</Link>
           <Link href='/#about' className={styles.navLink}>À Propos</Link>
         </div>
@@ -42,8 +44,9 @@ export function Navbar() {
       {/* Menu mobile (s'affiche en superposition) */}
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
-          {/* --- CORRECTION ICI --- */}
           <Link href='/explorateur' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Explorateur</Link>
+          {/* --- AJOUT DU LIEN VERS L'ESTIMATEUR --- */}
+          <Link href='/estimer' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Estimer un bien</Link>
           <Link href='/guides' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>Guides</Link>
           <Link href='/#about' className={styles.mobileNavLink} onClick={() => setIsMenuOpen(false)}>À Propos</Link>
         </div>
