@@ -1,0 +1,82 @@
+/* --- Structure Générale --- */
+.panel {
+  @apply absolute top-0 right-0 z-[1100] w-full md:w-96 lg:w-[450px] h-full bg-white shadow-2xl;
+  @apply transform translate-x-full transition-transform duration-300 ease-in-out;
+  @apply flex flex-col;
+}
+.panelVisible {
+  @apply translate-x-0;
+}
+
+/* --- En-tête --- */
+.header {
+  @apply relative h-48 w-full flex-shrink-0;
+}
+.image {
+  @apply w-full h-full object-cover;
+}
+.closeButton {
+  @apply absolute top-3 right-3 w-8 h-8 bg-white/70 rounded-full text-2xl text-gray-800 flex items-center justify-center backdrop-blur-sm hover:bg-white transition-colors;
+}
+
+/* --- Contenu Principal --- */
+.content {
+  @apply p-6 flex-grow overflow-y-auto;
+}
+.title {
+  @apply text-2xl font-bold tracking-tight text-gray-900;
+}
+.subtitle {
+  @apply text-sm text-gray-500 mb-4;
+}
+
+/* --- Système d'onglets --- */
+.tabContainer {
+  @apply flex border-b border-gray-200 mb-6;
+}
+.tabButton {
+  @apply flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium text-gray-500 border-b-2 border-transparent;
+  @apply hover:bg-gray-50 hover:text-gray-700 transition-colors;
+}
+.tabActive {
+  @apply text-orange-600 border-orange-500;
+}
+
+/* --- Contenu des onglets --- */
+.tabContent {
+  /* Pas de style spécifique, le contenu interne gère sa mise en page */
+}
+.description {
+  @apply text-gray-600 mb-6;
+}
+.dataGrid {
+  @apply grid grid-cols-2 gap-4 text-center;
+}
+.dataWidget {
+  @apply p-3 rounded-lg;
+}
+.dataWidgetOrange { @apply bg-orange-50; }
+.dataWidgetBlue { @apply bg-blue-50; }
+.dataLabel { @apply text-xs; }
+.dataLabelOrange { @apply text-orange-800; }
+.dataLabelBlue { @apply text-blue-800; }
+.dataValue { @apply text-xl font-bold; }
+.dataValueOrange { @apply text-orange-600; }
+.dataValueBlue { @apply text-blue-600; }
+.contentTitle {
+  @apply text-lg font-semibold text-gray-800 mb-3;
+}
+.list {
+  @apply list-disc list-inside text-gray-600 space-y-2;
+}
+.list li::marker {
+  @apply text-orange-400;
+}
+
+/* --- Pied de page --- */
+.footer {
+  @apply p-6 mt-auto border-t border-gray-200 flex-shrink-0;
+}
+.ctaButton {
+  @apply block w-full bg-orange-500 text-white text-center font-bold py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors;
+}

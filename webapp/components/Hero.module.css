@@ -1,51 +1,79 @@
-.heroBackground {
-  @apply absolute inset-0;
+/* --- Conteneur principal et Fond --- */
+.heroSection {
+  @apply relative min-h-screen flex items-center px-6 overflow-hidden text-white;
 }
+
+.heroBackground {
+  @apply absolute inset-0 z-[-1]; /* On le place en arrière-plan */
+}
+
 .heroBackground img {
   @apply w-full h-full object-cover;
 }
 
+/* On ajoute un dégradé sombre pour améliorer la lisibilité du texte */
+.heroOverlay {
+  @apply absolute inset-0 bg-gradient-to-t from-gray-900/60 to-gray-900/20;
+}
+
+
+/* --- Bulle de texte principale --- */
 .textBubble {
-  @apply bg-white/20 backdrop-blur-xl p-10 rounded-3xl md:max-w-lg;
+  /* Effet de verre dépoli plus prononcé */
+  @apply bg-black/20 backdrop-blur-xl p-8 md:p-12 rounded-3xl md:max-w-xl;
+  @apply border border-white/20; /* Bordure subtile pour un look premium */
 }
+
 .textBubble h1 {
-  @apply text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-6;
+  @apply text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-4;
+  /* Ombre portée pour détacher le texte du fond */
+  text-shadow: 0px 2px 10px rgba(0,0,0,0.3);
 }
+
 .textBubble p {
   @apply text-lg mb-8 opacity-90;
 }
-.searchBar {
-  @apply bg-white rounded-full p-2 flex items-center shadow-lg;
+
+
+/* --- Bouton d'appel à l'action --- */
+.heroCtaButton {
+  @apply inline-block bg-orange-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg;
+  @apply hover:bg-orange-600 transition-all duration-300 transform hover:scale-105;
 }
-.searchBar input {
-  @apply w-full bg-transparent text-gray-800 px-4 focus:outline-none;
-}
-.searchBar button {
-  @apply bg-orange-500 text-white rounded-full p-3 hover:bg-orange-600 transition-colors;
-}
+
+
+/* --- Carte d'image flottante --- */
 .imageCard {
-    @apply absolute bottom-10 right-10;
+  @apply absolute bottom-10 right-10 hidden lg:block; /* Caché sur tablette, visible sur grand écran */
 }
+
 .imageCard > div {
-  @apply bg-white/90 backdrop-blur-xl p-6 rounded-2xl text-gray-800 shadow-2xl w-80;
+  @apply bg-white/90 backdrop-blur-xl p-5 rounded-2xl text-gray-800 shadow-2xl w-80;
+  @apply border border-white/30;
 }
+
 .imageCard img {
   @apply w-full h-48 object-cover rounded-xl mb-4;
 }
+
 .imageCard h3 {
-  @apply text-xl font-bold;
+  @apply text-xl font-bold text-gray-900;
 }
+
 .imageCard p {
   @apply text-gray-600 text-sm;
 }
 
-/* Styles pour la preuve sociale intégrée */
+
+/* --- Preuve Sociale --- */
 .socialProof {
-  @apply mt-8 pt-6 border-t border-white/20;
+  @apply mt-10 pt-6 border-t border-white/20;
 }
+
 .proofLogos {
-  @apply flex justify-center items-center gap-8 text-white/70;
+  @apply flex justify-center md:justify-start items-center gap-8 text-white/70;
 }
+
 .proofLogos svg {
-  @apply h-5;
+  @apply h-5 transition-opacity hover:opacity-100;
 }

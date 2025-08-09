@@ -1,20 +1,28 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import { Navbar } from '@/components/Navbar'
-import { Footer } from '@/components/Footer'
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = { title: 'Market Pulse', description: 'Votre expert immobilier sur la Costa Brava' }
+export const metadata = {
+  title: "Market Pulse Pro",
+  description: "Trouvez les trésors cachés de la Costa Brava.",
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='fr'>
+    <html lang="fr">
       <body className={inter.className}>
         <Navbar />
-        <main>{children}</main>
-        <Footer />
+        {/* --- MODIFICATION ICI --- */}
+        {/* On ajoute un padding-top égal à la hauteur de la Navbar (h-24 = 6rem) */}
+        <main className>{children}</main>
+        
+        {/* Le Footer n'est pas utile sur la page de l'explorateur, 
+            mais cette structure fonctionnera pour les autres pages.
+        */}
       </body>
     </html>
-  )
+  );
 }
