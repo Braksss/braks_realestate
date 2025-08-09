@@ -1,37 +1,27 @@
+// webapp/components/DataHeatmapLayer.jsx
+
 "use client";
 
 import { GeoJSON } from 'react-leaflet';
 import geojsonData from '@/data/map-shapes.json';
 
-// Fonction qui génère une échelle de couleurs en fonction d'une valeur (score)
+// L'échelle de couleur est maintenant plus professionnelle (Bleu -> Vert -> Jaune -> Rouge)
 function getColor(value, min, max) {
-  // Échelle de couleurs allant du gris-bleu (faible score) à l'orange vif (score élevé)
-  const colors = ['#a6bce3', '#74add1', '#fdbf6f', '#ff7f00', '#e31a1c'];
-  
-  if (value === null || value === undefined) {
-    return '#e0e0e0'; // Gris pour les zones sans données
-  }
-  
-  const range = max - min;
-  // Gère le cas où toutes les valeurs sont identiques pour éviter une division par zéro
-  if (range === 0) {
-    return colors[Math.floor(colors.length / 2)];
-  }
+  if (value === null || value === undefined) return '#e0e0e0'; // Gris pour les zones sans données
 
-  const normalized = (value - min) / range;
-  const colorIndex = Math.min(Math.floor(normalized * colors.length), colors.length - 1);
-  return colors[colorIndex];
+  // Normalisation de la valeur entre 0 et 1
+  const normalized = (max - min === 0) ? 0.5 : (value - min) / (max - min);
+
+  // Dégradé de couleur
+  const r = Math.round(255 * Math.min(1, normalized * 2));
+  const g = Math.round(255 * (1 - Math.abs(normalized - 0.5) * 2));
+  const b = Math.round(255 * Math.max(0, 1 - normalized * 2));
+
+  return `rgb(${r},${g},${b})`;
 }
 
-export function DataHeatmapLayer({ locations, onZoneClick }) {
-  // On récupère les scores de correspondance pour définir l'échelle de couleurs
-  const values = locations.map(loc => loc.matchScore).filter(v => v != null && typeof v === 'number');
+export function DataHeatmapLayer({ locations, onZoneClick, dataKey, range }) {
   
-  // On définit des bornes sûres pour l'échelle (de 0 à 10 pour les scores)
-  const minValue = 0;
-  const maxValue = 10;
-
-  // On enrichit les "dessins" avec vos données (scores, etc.)
   const enrichedGeoJson = {
     ...geojsonData,
     features: geojsonData.features.map(feature => {
@@ -40,26 +30,25 @@ export function DataHeatmapLayer({ locations, onZoneClick }) {
         ...feature,
         properties: {
           ...feature.properties,
-          dataValue: locationData ? locationData.matchScore : null,
+          // On utilise la clé dynamique et les données de la location
+          dataValue: locationData ? locationData[dataKey] : null,
           locationData: locationData || null
         }
       };
     })
   };
 
-  // Fonction pour styliser chaque zone en fonction de son score
   const styleFeature = (feature) => {
     const value = feature.properties.dataValue;
     return {
-      fillColor: getColor(value, minValue, maxValue),
+      fillColor: getColor(value, range.min, range.max),
       weight: 1,
       opacity: 1,
       color: 'white',
-      fillOpacity: 0.75
+      fillOpacity: 0.8
     };
   };
 
-  // Fonction pour gérer les interactions (clic, survol)
   const onEachFeature = (feature, layer) => {
     layer.on({
       click: () => {
@@ -67,15 +56,23 @@ export function DataHeatmapLayer({ locations, onZoneClick }) {
           onZoneClick(feature.properties.locationData);
         }
       },
-      mouseover: (e) => e.target.setStyle({ weight: 3, color: '#333' }),
-      mouseout: (e) => e.target.setStyle({ weight: 1, color: 'white' })
+      mouseover: (e) => {
+        e.target.setStyle({ weight: 3, color: '#333' });
+        e.target.bindTooltip(
+            `<b>${feature.properties.name}</b><br>Score: ${feature.properties.dataValue}%`,
+            { permanent: false, direction: 'center', opacity: 0.9 }
+        ).openTooltip();
+      },
+      mouseout: (e) => {
+          e.target.setStyle({ weight: 1, color: 'white' });
+          e.target.unbindTooltip();
+      }
     });
   };
 
   return (
     <GeoJSON 
-      // Cette clé unique force React à redessiner la couche quand les scores changent
-      key={JSON.stringify(locations.map(l => l.matchScore))}
+      key={JSON.stringify(locations)}
       data={enrichedGeoJson} 
       style={styleFeature}
       onEachFeature={onEachFeature}

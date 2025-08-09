@@ -1,3 +1,5 @@
+// app/layout.js
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
@@ -15,13 +17,14 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className={inter.className}>
         <Navbar />
-        {/* --- MODIFICATION ICI --- */}
-        {/* On ajoute un padding-top égal à la hauteur de la Navbar (h-24 = 6rem) */}
-        <main className>{children}</main>
         
-        {/* Le Footer n'est pas utile sur la page de l'explorateur, 
-            mais cette structure fonctionnera pour les autres pages.
+        {/*
+          On applique un padding-top global ici.
+          Cela décale TOUT le contenu vers le bas.
         */}
+        <main className="pt-24">{children}</main>
+        
+        <Footer />
       </body>
     </html>
   );

@@ -1,27 +1,28 @@
+// app/page.js
+
 import { Hero } from '@/components/Hero';
-import { Features } from '@/components/Features';       // On va utiliser cette section
-import { GuidesSection } from '@/components/GuidesSection'; // Et celle-ci aussi
+import { Features } from '@/components/Features';
+import { GuidesSection } from '@/components/GuidesSection';
 import { AboutSection } from '@/components/AboutSection';
-// Il n'y a plus besoin d'importer ExploreSection ici
 
 export default function HomePage() {
   return (
     <>
-      <Hero />
+      {/*
+        Cette div utilise une marge négative pour "annuler" le pt-24 du layout.
+        Le Hero remonte et se place exactement où il doit être.
+      */}
+      <div className="-mt-24">
+        <Hero />
+      </div>
       
-      {/* On remplace "ExploreSection" par "Features" pour expliquer 
-        la valeur de votre service dès le début.
+      {/*
+        Les autres sections ne sont pas modifiées et conservent
+        l'espacement normal défini par le layout.
       */}
       <Features />
-      
-      {/* On garde la section des guides, car c'est un excellent 
-        outil pour générer de la confiance et des leads.
-      */}
       <GuidesSection />
-      
       <AboutSection />
-      
-      {/* Le Footer est géré par le layout, donc pas besoin de l'ajouter ici */}
     </>
-  )
+  );
 }

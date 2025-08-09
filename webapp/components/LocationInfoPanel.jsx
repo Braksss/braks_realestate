@@ -1,3 +1,4 @@
+
 "use client";
 import { useState, useEffect } from 'react';
 import styles from './LocationInfoPanel.module.css';
@@ -7,7 +8,7 @@ const OverviewIcon = () => <svg width="18" height="18" viewBox="0 0 24 24" fill=
 const ExpertIcon = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>;
 const ServicesIcon = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4a2 2 0 0 0-4 0v4"></path><path d="M12 12h.01"></path></svg>;
 
-export function LocationInfoPanel({ location, onClose }) {
+export function LocationInfoPanel({ location, onClose, displayScore }) {
   const [activeTab, setActiveTab] = useState('overview');
 
   // Réinitialise l'onglet sur "Aperçu" chaque fois qu'une nouvelle ville est sélectionnée
@@ -17,9 +18,9 @@ export function LocationInfoPanel({ location, onClose }) {
 
   const panelClasses = `${styles.panel} ${location ? styles.panelVisible : ''}`;
 
-  // Si aucune localisation n'est sélectionnée, le panneau est simplement caché
+  // Si aucune localisation n'est sélectionnée, le panneau est simplement caché et ne rend rien
   if (!location) {
-    return <div className={styles.panel}></div>;
+    return <div className={panelClasses}></div>;
   }
 
   const renderTabContent = () => {
@@ -85,7 +86,15 @@ export function LocationInfoPanel({ location, onClose }) {
         <button onClick={onClose} className={styles.closeButton}>&times;</button>
       </div>
       <div className={styles.content}>
-        <h2 className={styles.title}>{location.name}</h2>
+        <div className="flex justify-between items-start mb-1">
+            <h2 className={styles.title}>{location.name}</h2>
+            {displayScore !== null && (
+                <div className="text-center ml-4">
+                    <p className="text-xs text-orange-600 font-bold uppercase tracking-wider">Compatibilité</p>
+                    <p className="text-3xl font-bold text-orange-500">{displayScore}%</p>
+                </div>
+            )}
+        </div>
         <p className={styles.subtitle}>Costa Brava, Espagne</p>
         
         <div className={styles.tabContainer}>
@@ -105,8 +114,8 @@ export function LocationInfoPanel({ location, onClose }) {
         </div>
       </div>
       <div className={styles.footer}>
-        <a href="#" className={styles.ctaButton}>
-          En savoir plus sur {location.name}
+        <a href={`/lieux/${location.slug}`} className={styles.ctaButton}>
+          Dossier complet sur {location.name}
         </a>
       </div>
     </div>
