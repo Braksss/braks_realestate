@@ -1,10 +1,8 @@
 // webapp/components/FilterPanel.jsx
-
 "use client";
 
 import { useMemo } from 'react';
 
-// Une petite fonction pour extraire des options uniques depuis vos données
 const getUniqueOptions = (locations, key) => {
   const allValues = locations.flatMap(loc => loc[key]);
   return [...new Set(allValues)].sort();
@@ -12,7 +10,6 @@ const getUniqueOptions = (locations, key) => {
 
 export function FilterPanel({ filters, onFilterChange, locations }) {
   
-  // On génère dynamiquement les listes d'options pour les nouveaux filtres
   const propertyTypes = useMemo(() => getUniqueOptions(locations, 'typeDeBienMajoritaire'), [locations]);
   const allServices = useMemo(() => getUniqueOptions(locations, 'services'), [locations]);
 
@@ -28,12 +25,10 @@ export function FilterPanel({ filters, onFilterChange, locations }) {
   };
 
   return (
-    // On utilise les classes de votre module CSS existant
     <div className="p-6 bg-white h-full">
       <h2 className="text-2xl font-bold mb-6 text-gray-900">Explorer</h2>
       <p className="text-gray-600 mb-8 -mt-4 text-sm">Affinez votre recherche pour trouver la localité idéale.</p>
 
-      {/* Filtre de recherche par nom */}
       <div className="mb-6">
         <label htmlFor="searchTerm" className="block text-sm font-medium text-gray-700 mb-2">Nom de la ville</label>
         <input
@@ -43,11 +38,10 @@ export function FilterPanel({ filters, onFilterChange, locations }) {
           value={filters.searchTerm}
           onChange={handleInputChange}
           placeholder="Ex: Begur, Cadaqués..."
-          className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"
+          className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
         />
       </div>
       
-      {/* Filtre par profil d'investisseur */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">Projet de vie</label>
         <select name="profil" value={filters.profil} onChange={handleInputChange} className="w-full p-2 border border-gray-300 rounded-lg focus:ring-orange-500">
@@ -58,7 +52,6 @@ export function FilterPanel({ filters, onFilterChange, locations }) {
         </select>
       </div>
       
-      {/* --- NOUVEAU : Filtre par type de bien --- */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">Type de bien principal</label>
         <select name="propertyType" value={filters.propertyType} onChange={handleInputChange} className="w-full p-2 border border-gray-300 rounded-lg focus:ring-orange-500">
@@ -67,15 +60,13 @@ export function FilterPanel({ filters, onFilterChange, locations }) {
         </select>
       </div>
 
-      {/* Filtre par prix */}
       <div className="mb-6">
         <label htmlFor="maxPrice" className="block text-sm font-medium text-gray-700 mb-2">
-          Prix max / m²: <span className="font-bold text-orange-600">{filters.maxPrice.toLocaleString('fr-FR')} €</span>
+          Prix max / m²: <span className="font-bold text-orange-600">{Number(filters.maxPrice).toLocaleString('fr-FR')} €</span>
         </label>
-        <input type="range" id="maxPrice" name="maxPrice" min="2000" max="6000" step="100" value={filters.maxPrice} onChange={handleInputChange} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-500" />
+        <input type="range" id="maxPrice" name="maxPrice" min="2000" max="7000" step="100" value={filters.maxPrice} onChange={handleInputChange} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-500" />
       </div>
 
-      {/* --- NOUVEAU : Filtre par services (multi-choix) --- */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-3">Services et atouts requis</label>
         <div className="flex flex-wrap gap-2">

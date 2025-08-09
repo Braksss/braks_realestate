@@ -4,8 +4,6 @@ import styles from './LocationCard.module.css';
 
 export function LocationCard({ location }) {
   return (
-    // --- MODIFICATION DU LIEN ICI ---
-    // On redirige vers l'explorateur avec le slug de la ville en paramètre d'URL
     <Link href={`/explorateur?location=${location.slug}`} className={`${styles.card} group block overflow-hidden rounded-2xl cursor-pointer`}>
       <div className={styles.imageWrapper}>
         <img src={location.image} alt={location.name} className={styles.image} />

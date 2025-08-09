@@ -1,3 +1,4 @@
+// webapp/components/SocialProof.jsx
 import styles from './SocialProof.module.css';
 
 export function SocialProof() {

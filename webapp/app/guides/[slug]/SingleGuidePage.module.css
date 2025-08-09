@@ -1,9 +1,10 @@
+/* webapp/app/guides/[slug]/SingleGuidePage.module.css */
 .container {
   @apply max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-12 gap-16;
 }
 
 .article {
-  @apply lg:col-span-8; /* L'article prend 8 colonnes sur 12 */
+  @apply lg:col-span-8;
 }
 
 .title {
@@ -14,13 +15,12 @@
   @apply w-full h-auto max-h-[500px] object-cover rounded-2xl shadow-xl mb-12;
 }
 
-/* --- Barre latérale --- */
 .sidebar {
-  @apply lg:col-span-4; /* La barre latérale prend 4 colonnes */
+  @apply lg:col-span-4;
 }
 
 .sidebarStickyContent {
-  @apply sticky top-32; /* L'élément reste "collé" en haut lors du scroll */
+  @apply sticky top-32;
 }
 
 .sidebarTitle {

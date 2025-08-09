@@ -1,8 +1,9 @@
+// webapp/components/OpportunityModal.jsx
 "use client";
 
 import { useEffect } from 'react';
+import { useLockBodyScroll } from '@/hooks/useLockBodyScroll';
 
-// Hook pour fermer la modale avec la touche "Echap"
 function useEscapeKey(callback) {
   useEffect(() => {
     const handleEsc = (event) => {
@@ -15,14 +16,7 @@ function useEscapeKey(callback) {
 
 export function OpportunityModal({ location, bien, onClose }) {
   useEscapeKey(onClose);
-
-  // Empêche le scroll de l'arrière-plan quand la modale est ouverte
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, []);
+  useLockBodyScroll();
 
   return (
     <div 
@@ -35,7 +29,6 @@ export function OpportunityModal({ location, bien, onClose }) {
       >
         <button onClick={onClose} className="absolute top-3 right-4 text-gray-400 hover:text-gray-800 text-4xl font-light z-10">&times;</button>
         
-        {/* Scénario 1 : Un bien est disponible */}
         {bien ? (
           <div>
             <img src={bien.image} alt={bien.title} className="w-full h-72 object-cover rounded-t-2xl" />
@@ -52,7 +45,6 @@ export function OpportunityModal({ location, bien, onClose }) {
             </div>
           </div>
         ) : (
-        // Scénario 2 : Pas de bien public, le vrai aimant à leads !
           <div className="p-8 text-center">
             <h2 className="text-3xl font-bold my-2 text-gray-900">Vous avez bon goût ! {location.name} est très demandé.</h2>
             <p className="text-lg text-gray-600 my-4 max-w-lg mx-auto">

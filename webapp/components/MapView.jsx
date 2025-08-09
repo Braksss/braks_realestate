@@ -1,15 +1,17 @@
+// webapp/components/MapView.jsx
 "use client";
 
 import { useMemo, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { MapContainer, TileLayer } from 'react-leaflet';
-import { ProjectWizard } from '@/components/ProjectWizard';
+import { ProjectWizard } from '@/components/ProjectWizardV2';
 import { DataHeatmapLayer } from '@/components/DataHeatmapLayer';
 import { LocationInfoPanel } from '@/components/LocationInfoPanel';
 import { MapLegend } from '@/components/MapLegend';
 import { OpportunityModal } from '@/components/OpportunityModal';
 import { biensDisponibles } from '@/data/biensDisponibles';
 import { MarkersLayer } from '@/components/MarkersLayer';
+import { LayerControls } from '@/components/LayerControls';
 
 const calculateOpportunityIndex = (location, criteria, regionAverages) => {
     let score = 0, maxScore = 0;
@@ -39,6 +41,7 @@ export default function MapView({ locations }) {
     });
     const [selectedLocation, setSelectedLocation] = useState(null);
     const [modalLocation, setModalLocation] = useState(null);
+    const [activeLayer, setActiveLayer] = useState('opportunityIndex');
     
     useEffect(() => {
         if (locationSlugFromUrl) {
@@ -65,11 +68,12 @@ export default function MapView({ locations }) {
         })).sort((a, b) => b.opportunityIndex - a.opportunityIndex);
     }, [criteria, locations, regionAverages]);
 
-    const scoreRange = useMemo(() => {
-        const scores = locationsWithScore.map(l => l.opportunityIndex);
-        if (scores.length === 0) return { min: 0, max: 100 };
-        return { min: Math.min(...scores), max: Math.max(...scores) };
-    }, [locationsWithScore]);
+    const dataRange = useMemo(() => {
+        const values = locationsWithScore.map(l => l[activeLayer]);
+        if (values.length === 0) return { min: 0, max: 100 };
+        const numericValues = values.filter(v => typeof v === 'number');
+        return { min: Math.min(...numericValues), max: Math.max(...numericValues) };
+    }, [locationsWithScore, activeLayer]);
     
     const handleCriteriaChange = (name, value) => {
         if (name.startsWith('weight_')) {
@@ -98,10 +102,11 @@ export default function MapView({ locations }) {
             <main className="relative flex-grow h-full">
                 <MapContainer center={[42.02, 3.06]} zoom={9} scrollWheelZoom={true} style={{ height: '100%', width: '100%', zIndex: 0, backgroundColor: '#f0f0f0' }}>
                     <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png" attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>' />
-                    <DataHeatmapLayer key={`geojson-${JSON.stringify(criteria)}`} locations={locationsWithScore} onZoneClick={setSelectedLocation} dataKey="opportunityIndex" range={scoreRange} />
+                    <DataHeatmapLayer key={`geojson-${activeLayer}-${JSON.stringify(criteria)}`} locations={locationsWithScore} onZoneClick={setSelectedLocation} dataKey={activeLayer} range={dataRange} />
                     <MarkersLayer locations={locationsWithScore} onZoneClick={setSelectedLocation} />
                 </MapContainer>
-                <MapLegend range={scoreRange} unit="%" title="Indice d'Opportunité" />
+                <LayerControls activeLayer={activeLayer} onLayerChange={setActiveLayer} />
+                <MapLegend range={dataRange} activeLayer={activeLayer} />
             </main>
             <LocationInfoPanel 
                 location={selectedLocation} 

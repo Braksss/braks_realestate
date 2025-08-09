@@ -5,71 +5,59 @@ export const locations = [
     "slug": "barcelona",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Barcelona",
     "coordinates": [
-      41.399,
-      2.1259
+      41.3851,
+      2.1734
     ],
-    "description": "Capitale catalane, hub économique et culturel, base idéale pour rayonner vers toute la côte nord.",
-    "prixMoyenM2": 4363,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Appartements urbains",
-    "services": [
-      "Hôpitaux",
-      "Universités",
-      "Gare AVE"
-    ],
+    "description": "Capitale de la Catalogne, grande métropole côtière.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Urbaine dynamique",
-      "atouts": [
-        "Services complets"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 8,
-      "retraite": 7,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Visez la proximité transports et universités pour un mix résidence principale / locatif durable."
+    "conseilDeLexpert": null
   },
   {
     "id": 2,
     "name": "Sant Adrià de Besòs",
-    "slug": "sant-adria-de-bes-s",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Adria+De+Bes+S",
+    "slug": "sant-adria-de-besos",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Adria+De+Besos",
     "coordinates": [
-      41.3679,
-      2.207
+      41.4306,
+      2.2189
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3585,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune côtière à l'embouchure du Besòs entre Barcelone et Badalone.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 3,
@@ -77,35 +65,29 @@ export const locations = [
     "slug": "badalona",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Badalona",
     "coordinates": [
-      41.3648,
-      2.1855
+      41.45,
+      2.2474
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2261,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Grande ville côtière au nord-est de Barcelone.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 4,
@@ -113,35 +95,29 @@ export const locations = [
     "slug": "montgat",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Montgat",
     "coordinates": [
-      41.3885,
-      2.2037
+      41.4681,
+      2.28
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2254,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Petite commune côtière du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 5,
@@ -149,35 +125,29 @@ export const locations = [
     "slug": "el-masnou",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+El+Masnou",
     "coordinates": [
-      41.3971,
-      2.2281
+      41.4794,
+      2.3189
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3316,
-    "evolution5ans": 27,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Ville du Maresme avec port de plaisance.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 6,
@@ -185,34 +155,29 @@ export const locations = [
     "slug": "premia-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Premia+De+Mar",
     "coordinates": [
-      41.4098,
-      2.232
+      41.4926,
+      2.3569
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 3013,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Ville côtière résidentielle du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
   },
   {
     "id": 7,
@@ -220,34 +185,29 @@ export const locations = [
     "slug": "vilassar-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vilassar+De+Mar",
     "coordinates": [
-      41.4681,
-      2.217
+      41.5059,
+      2.3922
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 3318,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Ville côtière du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
   },
   {
     "id": 8,
@@ -255,354 +215,299 @@ export const locations = [
     "slug": "cabrera-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Cabrera+De+Mar",
     "coordinates": [
-      41.5045,
-      2.2266
+      41.5164,
+      2.3921
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 3189,
-    "evolution5ans": 26,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Commune du Maresme située légèrement en retrait de la côte.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
   },
   {
     "id": 9,
-    "name": "Mataró",
-    "slug": "mataro",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Mataro",
-    "coordinates": [
-      41.429,
-      2.2876
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3436,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Port de plaisance"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 10,
-    "name": "Argentona",
-    "slug": "argentona",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Argentona",
-    "coordinates": [
-      41.5105,
-      2.2858
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3298,
-    "evolution5ans": 17,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 11,
     "name": "Cabrils",
     "slug": "cabrils",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Cabrils",
     "coordinates": [
-      41.5377,
-      2.2606
+      41.522,
+      2.372
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3330,
-    "evolution5ans": 23,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune résidentielle dans l'arrière-pays immédiat du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 10,
+    "name": "Mataró",
+    "slug": "mataro",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Mataro",
+    "coordinates": [
+      41.5381,
+      2.4445
+    ],
+    "description": "Capitale du Maresme, grande ville côtière avec port.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 11,
+    "name": "Sant Andreu de Llavaneres",
+    "slug": "sant-andreu-de-llavaneres",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Andreu+De+Llavaneres",
+    "coordinates": [
+      41.5668,
+      2.4818
+    ],
+    "description": "Commune côtière au nord de Mataró.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
   },
   {
     "id": 12,
-    "name": "Dosrius",
-    "slug": "dosrius",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Dosrius",
+    "name": "Caldes d'Estrac",
+    "slug": "caldes-d-estrac",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Caldes+D+Estrac",
     "coordinates": [
-      41.5338,
-      2.2945
+      41.568,
+      2.523
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2940,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Petite station balnéaire du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 13,
-    "name": "Òrrius",
-    "slug": "rrius",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Rrius",
-    "coordinates": [
-      41.4806,
-      2.2496
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3554,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 14,
     "name": "Arenys de Mar",
     "slug": "arenys-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Arenys+De+Mar",
     "coordinates": [
-      41.5492,
-      2.3511
+      41.5793,
+      2.5496
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 3476,
-    "evolution5ans": 17,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance",
-      "Plages surveillées"
-    ],
+    "description": "Ville portuaire du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Arenys de Munt",
     "slug": "arenys-de-munt",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Arenys+De+Munt",
     "coordinates": [
-      41.5205,
-      2.3078
+      41.6096,
+      2.5347
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2947,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Commune de l'arrière-pays proche d'Arenys de Mar.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "Canet de Mar",
     "slug": "canet-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Canet+De+Mar",
     "coordinates": [
-      41.53,
-      2.2934
+      41.588,
+      2.5825
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 3546,
-    "evolution5ans": 34,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Ville côtière connue pour son modernisme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 16,
+    "name": "Sant Cebrià de Vallalta",
+    "slug": "sant-cebria-de-vallalta",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Cebria+De+Vallalta",
+    "coordinates": [
+      41.621,
+      2.589
+    ],
+    "description": "Commune intérieure au pied de la serra de Montnegre.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
   },
   {
     "id": 17,
-    "name": "Sant Pol de Mar",
-    "slug": "sant-pol-de-mar",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Pol+De+Mar",
+    "name": "Sant Iscle de Vallalta",
+    "slug": "sant-iscle-de-vallalta",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Iscle+De+Vallalta",
     "coordinates": [
-      41.5106,
-      2.3458
+      41.6215,
+      2.568
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 4093,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Commune intérieure du Vallalta (Maresme).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
   },
   {
     "id": 18,
@@ -610,34 +515,29 @@ export const locations = [
     "slug": "calella",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Calella",
     "coordinates": [
-      41.5304,
-      2.3302
+      41.614,
+      2.657
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 4110,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Station balnéaire du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 19,
@@ -645,34 +545,29 @@ export const locations = [
     "slug": "pineda-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Pineda+De+Mar",
     "coordinates": [
-      41.5465,
-      2.3346
+      41.6266,
+      2.688
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 2914,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Ville côtière familiale du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 20,
@@ -680,34 +575,29 @@ export const locations = [
     "slug": "santa-susanna",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Santa+Susanna",
     "coordinates": [
-      41.6172,
-      2.3927
+      41.6369,
+      2.7169
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3621,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Station balnéaire du Maresme.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 21,
@@ -715,34 +605,29 @@ export const locations = [
     "slug": "malgrat-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Malgrat+De+Mar",
     "coordinates": [
-      41.5522,
-      2.4134
+      41.6461,
+      2.741
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3961,
-    "evolution5ans": 24,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Ville côtière à la limite du Maresme et de la Selva.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 22,
@@ -750,35 +635,29 @@ export const locations = [
     "slug": "palafolls",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Palafolls",
     "coordinates": [
-      41.5774,
-      2.3819
+      41.663,
+      2.747
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3516,
-    "evolution5ans": 28,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure proche de la côte.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 23,
@@ -786,35 +665,29 @@ export const locations = [
     "slug": "tordera",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Tordera",
     "coordinates": [
-      41.5809,
-      2.3559
+      41.7025,
+      2.7193
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3349,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Ville située sur la Tordera, proche de Blanes.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 24,
@@ -822,35 +695,29 @@ export const locations = [
     "slug": "blanes",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Blanes",
     "coordinates": [
-      41.6034,
-      2.4103
+      41.674,
+      2.7925
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3995,
-    "evolution5ans": 26,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance",
-      "Plages surveillées"
-    ],
+    "description": "Porte sud de la Costa Brava, ville côtière avec port.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 25,
@@ -858,106 +725,89 @@ export const locations = [
     "slug": "lloret-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Lloret+De+Mar",
     "coordinates": [
-      41.6239,
-      2.4616
+      41.6991,
+      2.8456
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3083,
-    "evolution5ans": 30,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Grande station touristique de la Costa Brava.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 26,
-    "name": "Fenals",
-    "slug": "fenals",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Fenals",
+    "name": "Fenals (Lloret de Mar)",
+    "slug": "fenals-lloret-de-mar",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Fenals+Lloret+De+Mar",
     "coordinates": [
-      41.6476,
-      2.4473
+      41.6936,
+      2.8307
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2424,
-    "evolution5ans": 18,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Quartier/plage de Lloret de Mar.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 27,
-    "name": "Canyelles",
-    "slug": "canyelles",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Canyelles",
+    "name": "Cala Canyelles (Lloret)",
+    "slug": "cala-canyelles-lloret",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Cala+Canyelles+Lloret",
     "coordinates": [
-      41.6715,
-      2.4609
+      41.7208,
+      2.8792
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3064,
-    "evolution5ans": 33,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Crique et port de plaisance entre Lloret et Tossa.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 28,
@@ -965,35 +815,29 @@ export const locations = [
     "slug": "tossa-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Tossa+De+Mar",
     "coordinates": [
-      41.6256,
-      2.4298
+      41.7206,
+      2.9333
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 6417,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Restaurants gastronomiques",
-      "Plages surveillées"
-    ],
+    "description": "Ville côtière historique avec enceinte médiévale (Vila Vella).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 10
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 29,
@@ -1001,1347 +845,1139 @@ export const locations = [
     "slug": "sant-feliu-de-guixols",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Feliu+De+Guixols",
     "coordinates": [
-      41.6549,
-      2.4569
+      41.7803,
+      3.0309
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 4547,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Ville côtière avec port, au sud de la baie de Sant Feliu.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 30,
     "name": "S'Agaró",
-    "slug": "sagaro",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sagaro",
+    "slug": "s-agaro",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+S+Agaro",
     "coordinates": [
-      41.7085,
-      2.4652
+      41.7927,
+      3.0513
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5592,
-    "evolution5ans": 36,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Localité littorale entre Sant Feliu et Platja d'Aro.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 31,
-    "name": "Santa Cristina d'Aro",
-    "slug": "santa-cristina-daro",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Santa+Cristina+Daro",
+    "name": "Castell d'Aro",
+    "slug": "castell-d-aro",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Castell+D+Aro",
     "coordinates": [
-      41.6848,
-      2.4508
+      41.8145,
+      3.033
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2523,
-    "evolution5ans": 28,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Noyau historique de Castell-Platja d'Aro (intérieur).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Golfs à proximité"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 32,
-    "name": "Castell-Platja d'Aro",
-    "slug": "castell-platja-daro",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Castell+Platja+Daro",
+    "name": "Platja d'Aro",
+    "slug": "platja-d-aro",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Platja+D+Aro",
     "coordinates": [
-      41.6617,
-      2.5036
+      41.8185,
+      3.067
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5578,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Station balnéaire de Castell-Platja d'Aro.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 33,
-    "name": "Calonge i Sant Antoni",
-    "slug": "calonge-i-sant-antoni",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Calonge+I+Sant+Antoni",
+    "name": "Santa Cristina d'Aro",
+    "slug": "santa-cristina-d-aro",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Santa+Cristina+D+Aro",
     "coordinates": [
-      41.7481,
-      2.4921
+      41.7927,
+      3.0005
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 4935,
-    "evolution5ans": 36,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure reliée à la côte par la C-65.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 34,
+    "name": "Calonge",
+    "slug": "calonge",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Calonge",
+    "coordinates": [
+      41.859,
+      3.0713
+    ],
+    "description": "Commune intérieure (Calonge) reliée à Sant Antoni sur la côte.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 35,
+    "name": "Sant Antoni de Calonge",
+    "slug": "sant-antoni-de-calonge",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Antoni+De+Calonge",
+    "coordinates": [
+      41.8288,
+      3.0806
+    ],
+    "description": "Localité littorale entre Platja d'Aro et Palamós.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 36,
     "name": "Palamós",
     "slug": "palamos",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Palamos",
     "coordinates": [
-      41.7122,
-      2.5151
+      41.8484,
+      3.1291
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5314,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Ville portuaire majeure de la Costa Brava.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
-    "id": 35,
-    "name": "Vall-Llobrega",
+    "id": 37,
+    "name": "Vall-llobrega",
     "slug": "vall-llobrega",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vall+Llobrega",
     "coordinates": [
-      41.7303,
-      2.4773
+      41.883,
+      3.116
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3286,
-    "evolution5ans": 14,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure voisine de Palamós.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 36,
+    "id": 38,
     "name": "Mont-ras",
     "slug": "mont-ras",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Mont+Ras",
     "coordinates": [
-      41.7633,
-      2.52
+      41.896,
+      3.145
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2429,
-    "evolution5ans": 25,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure entre Palamós et Palafrugell.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 37,
+    "id": 39,
     "name": "Palafrugell",
     "slug": "palafrugell",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Palafrugell",
     "coordinates": [
-      41.8018,
-      2.5642
+      41.917,
+      3.1639
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2829,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Restaurants gastronomiques"
-    ],
+    "description": "Ville de l'intérieur proche des criques (Calella, Llafranc, Tamariu).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Patrimoine historique"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 38,
+    "id": 40,
     "name": "Calella de Palafrugell",
     "slug": "calella-de-palafrugell",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Calella+De+Palafrugell",
     "coordinates": [
-      41.7303,
-      2.5788
+      41.8885,
+      3.1895
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 4822,
-    "evolution5ans": 18,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Restaurants gastronomiques",
-      "Plages surveillées"
-    ],
+    "description": "Localité littorale de Palafrugell.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Patrimoine historique"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
-    "id": 39,
+    "id": 41,
     "name": "Llafranc",
     "slug": "llafranc",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Llafranc",
     "coordinates": [
-      41.8082,
-      2.5825
+      41.8942,
+      3.1936
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 6681,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Localité littorale de Palafrugell avec port de plaisance.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
-    "id": 40,
+    "id": 42,
     "name": "Tamariu",
     "slug": "tamariu",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Tamariu",
     "coordinates": [
-      41.7584,
-      2.5584
+      41.9187,
+      3.203
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 6751,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Localité littorale de Palafrugell.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
-    "id": 41,
+    "id": 43,
     "name": "Begur",
     "slug": "begur",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Begur",
     "coordinates": [
-      41.7826,
-      2.608
+      41.954,
+      3.209
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 6233,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Restaurants gastronomiques"
-    ],
+    "description": "Commune avec criques réputées (Sa Riera, Sa Tuna, Aiguablava).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Patrimoine historique"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
-  },
-  {
-    "id": 42,
-    "name": "Sa Riera",
-    "slug": "sa-riera",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sa+Riera",
-    "coordinates": [
-      41.8595,
-      2.6062
-    ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5323,
-    "evolution5ans": 25,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
-    },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
-  },
-  {
-    "id": 43,
-    "name": "Sa Tuna",
-    "slug": "sa-tuna",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sa+Tuna",
-    "coordinates": [
-      41.817,
-      2.6078
-    ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 6029,
-    "evolution5ans": 30,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
-    },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 44,
-    "name": "Aiguablava",
-    "slug": "aiguablava",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Aiguablava",
+    "name": "Sa Riera (Begur)",
+    "slug": "sa-riera-begur",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sa+Riera+Begur",
     "coordinates": [
-      41.8776,
-      2.5957
+      41.958,
+      3.214
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5515,
-    "evolution5ans": 23,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Quartier/plage au nord de Begur.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 45,
+    "name": "Sa Tuna (Begur)",
+    "slug": "sa-tuna-begur",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sa+Tuna+Begur",
+    "coordinates": [
+      41.932,
+      3.237
+    ],
+    "description": "Quartier/plage au sud-est de Begur.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 46,
+    "name": "Aiguablava (Begur)",
+    "slug": "aiguablava-begur",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Aiguablava+Begur",
+    "coordinates": [
+      41.937,
+      3.22
+    ],
+    "description": "Crique/zone littorale de Begur.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 47,
     "name": "Regencós",
     "slug": "regencos",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Regencos",
     "coordinates": [
-      41.8046,
-      2.5626
+      41.952,
+      3.189
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3334,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Petit village intérieur de l'Empordanet.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 46,
+    "id": 48,
     "name": "Pals",
     "slug": "pals",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Pals",
     "coordinates": [
-      41.8675,
-      2.5712
+      41.971,
+      3.151
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3492,
-    "evolution5ans": 15,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Restaurants gastronomiques"
-    ],
+    "description": "Village médiéval avec plage à proximité.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Patrimoine historique",
-        "Golfs à proximité"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 47,
+    "id": 49,
     "name": "Peratallada",
     "slug": "peratallada",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Peratallada",
     "coordinates": [
-      41.8421,
-      2.6709
+      41.974,
+      3.079
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2876,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Restaurants gastronomiques"
-    ],
+    "description": "Village médiéval (commune de Forallac).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Patrimoine historique"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 48,
+    "id": 50,
     "name": "Torrent",
     "slug": "torrent",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Torrent",
     "coordinates": [
-      41.8812,
-      2.6182
+      41.9503,
+      3.1255
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3194,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Petit village intérieur du Baix Empordà.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 49,
+    "id": 51,
     "name": "Gualta",
     "slug": "gualta",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Gualta",
     "coordinates": [
-      41.8942,
-      2.6726
+      42.017,
+      3.097
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3369,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Village intérieur proche du Ter.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 50,
+    "id": 52,
     "name": "Torroella de Montgrí",
     "slug": "torroella-de-montgri",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Torroella+De+Montgri",
     "coordinates": [
-      41.8981,
-      2.6886
+      42.042,
+      3.128
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3033,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Ville au pied du massif du Montgrí, proche du littoral.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Parcs naturels"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 51,
-    "name": "L'Estartit",
-    "slug": "lestartit",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Lestartit",
-    "coordinates": [
-      41.8707,
-      2.686
-    ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3525,
-    "evolution5ans": 27,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
-    },
-    "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Sports nautiques"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
-    },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
-  },
-  {
-    "id": 52,
-    "name": "L'Escala",
-    "slug": "lescala",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Lescala",
-    "coordinates": [
-      41.9129,
-      2.7164
-    ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 4721,
-    "evolution5ans": 36,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Sports nautiques"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
-    },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
     "id": 53,
-    "name": "Sant Martí d'Empúries",
-    "slug": "sant-marti-dempuries",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Marti+Dempuries",
+    "name": "L'Estartit",
+    "slug": "l-estartit",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+L+Estartit",
     "coordinates": [
-      41.9808,
-      2.6498
+      42.053,
+      3.199
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3824,
-    "evolution5ans": 24,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Station balnéaire (îles Medes en face).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 54,
+    "name": "L'Escala",
+    "slug": "l-escala",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+L+Escala",
+    "coordinates": [
+      42.124,
+      3.131
+    ],
+    "description": "Ville littorale proche d'Empúries.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 55,
+    "name": "Sant Martí d'Empúries",
+    "slug": "sant-marti-d-empuries",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Marti+D+Empuries",
+    "coordinates": [
+      42.133,
+      3.128
+    ],
+    "description": "Hameau historique d'Empúries (L'Escala).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 56,
     "name": "Albons",
     "slug": "albons",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Albons",
     "coordinates": [
-      41.9729,
-      2.6608
+      42.104,
+      3.09
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2592,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure proche de L'Escala.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 55,
+    "id": 57,
     "name": "Bellcaire d'Empordà",
-    "slug": "bellcaire-demporda",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Bellcaire+Demporda",
+    "slug": "bellcaire-d-emporda",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Bellcaire+D+Emporda",
     "coordinates": [
-      41.957,
-      2.6739
+      42.094,
+      3.083
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2575,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure au sud de L'Escala.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 56,
+    "id": 58,
     "name": "Viladamat",
     "slug": "viladamat",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Viladamat",
     "coordinates": [
-      41.9602,
-      2.7572
+      42.098,
+      3.074
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2354,
-    "evolution5ans": 28,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure proche d'Empúries.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 57,
-    "name": "Torroella de Fluvià",
-    "slug": "torroella-de-fluvia",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Torroella+De+Fluvia",
-    "coordinates": [
-      42.0053,
-      2.7653
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2400,
-    "evolution5ans": 15,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 58,
+    "id": 59,
     "name": "Sant Pere Pescador",
     "slug": "sant-pere-pescador",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Pere+Pescador",
     "coordinates": [
-      42.0002,
-      2.7437
+      42.187,
+      3.082
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2230,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Ville littorale sur le Fluvià.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Sports nautiques"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 59,
+    "id": 60,
+    "name": "L'Armentera",
+    "slug": "l-armentera",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+L+Armentera",
+    "coordinates": [
+      42.174,
+      3.076
+    ],
+    "description": "Commune intérieure près de Sant Pere Pescador.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 61,
     "name": "Ventalló",
     "slug": "ventallo",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Ventallo",
     "coordinates": [
-      42.0381,
-      2.7845
+      42.145,
+      3.035
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2540,
-    "evolution5ans": 27,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Commune intérieure de l'Alt Empordà.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 60,
-    "name": "Vilamacolum",
-    "slug": "vilamacolum",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vilamacolum",
-    "coordinates": [
-      42.0046,
-      2.7309
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3021,
-    "evolution5ans": 15,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 61,
-    "name": "Castelló d'Empúries",
-    "slug": "castello-dempuries",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Castello+Dempuries",
-    "coordinates": [
-      41.983,
-      2.7197
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3799,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 62,
+    "name": "Castelló d'Empúries",
+    "slug": "castello-d-empuries",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Castello+D+Empuries",
+    "coordinates": [
+      42.256,
+      3.074
+    ],
+    "description": "Ville historique (capitale médiévale), commune d'Empuriabrava.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
+    "qualiteDeVie": {
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
+    },
+    "styleDeVie": {
+      "ambiance": null,
+      "atouts": []
+    },
+    "scores": {
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
+  },
+  {
+    "id": 63,
     "name": "Empuriabrava",
     "slug": "empuriabrava",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Empuriabrava",
     "coordinates": [
-      42.0697,
-      2.8079
+      42.246,
+      3.109
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5668,
-    "evolution5ans": 29,
-    "typeDeBienMajoritaire": "Maisons avec amarre / canaux",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Marina résidentielle (Castelló d'Empúries).",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Sports nautiques"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 10
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
-    "id": 63,
+    "id": 64,
     "name": "Roses",
     "slug": "roses",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Roses",
     "coordinates": [
-      42.0573,
-      2.8124
+      42.2631,
+      3.1831
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 6776,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Grande baie avec port de plaisance.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Sports nautiques"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 10
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
+    "conseilDeLexpert": null
   },
   {
-    "id": 64,
+    "id": 65,
     "name": "Palau-saverdera",
     "slug": "palau-saverdera",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Palau+Saverdera",
     "coordinates": [
-      42.0136,
-      2.7789
+      42.299,
+      3.154
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2319,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Village intérieur dominant la baie de Roses.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
-    "id": 65,
+    "id": 66,
     "name": "Pau",
     "slug": "pau",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Pau",
     "coordinates": [
-      42.0822,
-      2.7653
+      42.314,
+      3.126
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2842,
-    "evolution5ans": 15,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Village intérieur proche de Roses.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 66,
-    "name": "Vilajuïga",
-    "slug": "vilajuiga",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vilajuiga",
-    "coordinates": [
-      42.0242,
-      2.8168
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3287,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 67,
@@ -2349,33 +1985,29 @@ export const locations = [
     "slug": "el-port-de-la-selva",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+El+Port+De+La+Selva",
     "coordinates": [
-      42.0354,
-      2.8298
+      42.336,
+      3.203
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3380,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Village portuaire au nord du cap de Creus.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Sports nautiques"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 68,
@@ -2383,34 +2015,29 @@ export const locations = [
     "slug": "la-selva-de-mar",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+La+Selva+De+Mar",
     "coordinates": [
-      42.0997,
-      2.8565
+      42.34,
+      3.196
     ],
-    "description": "Ville côtière familiale avec plage principale, commerces et accès rapide aux chemins de ronde.",
-    "prixMoyenM2": 3481,
-    "evolution5ans": 26,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Plages surveillées"
-    ],
+    "description": "Petit village intérieur près d'El Port de la Selva.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Côtier / village",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Côtière familiale",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Les seconds étages sans ascenseur peuvent offrir un excellent ratio prix/vue."
+    "conseilDeLexpert": null
   },
   {
     "id": 69,
@@ -2418,34 +2045,29 @@ export const locations = [
     "slug": "llanca",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Llanca",
     "coordinates": [
-      42.0627,
-      2.888
+      42.364,
+      3.153
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3304,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Ville côtière avec port de plaisance.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 70,
@@ -2453,35 +2075,29 @@ export const locations = [
     "slug": "colera",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Colera",
     "coordinates": [
-      42.1207,
-      2.8708
+      42.408,
+      3.149
     ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3058,
-    "evolution5ans": 32,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
+    "description": "Petit village côtier avant Portbou.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+    "conseilDeLexpert": null
   },
   {
     "id": 71,
@@ -2489,33 +2105,29 @@ export const locations = [
     "slug": "portbou",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Portbou",
     "coordinates": [
-      42.1283,
-      2.8504
+      42.4266,
+      3.1581
     ],
-    "description": "Destination touristique dynamique avec de larges plages et des infrastructures complètes pour la location saisonnière.",
-    "prixMoyenM2": 3334,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Appartements et petites maisons",
-    "services": [
-      "Port de plaisance"
-    ],
+    "description": "Commune frontalière avec la France.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Jeunes, familles et touristes"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Très saisonnière",
-      "atouts": [
-        "Sports nautiques"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 5,
-      "investissement": 9
+      "famille": null,
+      "retraite": null,
+      "investissement": null
     },
-    "conseilDeLexpert": "Ciblez les biens proches de la plage mais au calme relatif pour optimiser l'occupation hors haute saison."
+    "conseilDeLexpert": null
   },
   {
     "id": 72,
@@ -2523,1037 +2135,28 @@ export const locations = [
     "slug": "cadaques",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Cadaques",
     "coordinates": [
-      42.1493,
-      2.8602
+      42.288,
+      3.277
     ],
-    "description": "Secteur premium emblématique de la Costa Brava, apprécié pour ses criques, vues mer et ambiance préservée.",
-    "prixMoyenM2": 5587,
-    "evolution5ans": 28,
-    "typeDeBienMajoritaire": "Villas vue mer",
-    "services": [
-      "Restaurants gastronomiques"
-    ],
+    "description": "Village côtier emblématique du cap de Creus.",
+    "prixMoyenM2": null,
+    "evolution5ans": null,
+    "typeDeBienMajoritaire": "Localité côtière",
+    "services": [],
     "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
+      "securite": null,
+      "communauteInternationale": null,
+      "profilDemographique": null
     },
     "styleDeVie": {
-      "ambiance": "Chic et authentique",
-      "atouts": [
-        "Patrimoine historique"
-      ]
+      "ambiance": null,
+      "atouts": []
     },
     "scores": {
-      "famille": 7,
-      "retraite": 9,
-      "investissement": 8
-    },
-    "conseilDeLexpert": "Marché tendu : anticipez, faites pré-valider le financement et privilégiez les microquartiers bien exposés."
-  },
-  {
-    "id": 73,
-    "name": "Girona",
-    "slug": "girona",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Girona",
-    "coordinates": [
-      42.1059,
-      2.9032
-    ],
-    "description": "Ville dotée de tous les services, bien connectée et attractive toute l'année.",
-    "prixMoyenM2": 4736,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Appartements urbains",
-    "services": [
-      "Hôpitaux",
-      "Universités",
-      "Gare AVE"
-    ],
-    "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Forte",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Urbaine dynamique",
-      "atouts": [
-        "Services complets"
-      ]
-    },
-    "scores": {
-      "famille": 8,
-      "retraite": 7,
-      "investissement": 8
-    },
-    "conseilDeLexpert": "Visez la proximité transports et universités pour un mix résidence principale / locatif durable."
-  },
-  {
-    "id": 74,
-    "name": "Salt",
-    "slug": "salt",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Salt",
-    "coordinates": [
-      42.1963,
-      2.9422
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2219,
-    "evolution5ans": 28,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 75,
-    "name": "Sarrià de Ter",
-    "slug": "sarria-de-ter",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sarria+De+Ter",
-    "coordinates": [
-      42.176,
-      2.9148
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2404,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 76,
-    "name": "Sant Gregori",
-    "slug": "sant-gregori",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sant+Gregori",
-    "coordinates": [
-      42.1782,
-      2.9191
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2471,
-    "evolution5ans": 25,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 77,
-    "name": "Quart",
-    "slug": "quart",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Quart",
-    "coordinates": [
-      42.223,
-      2.9663
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2956,
-    "evolution5ans": 23,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 78,
-    "name": "Cassà de la Selva",
-    "slug": "cassa-de-la-selva",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Cassa+De+La+Selva",
-    "coordinates": [
-      42.1612,
-      2.9717
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2819,
-    "evolution5ans": 33,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 79,
-    "name": "Llagostera",
-    "slug": "llagostera",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Llagostera",
-    "coordinates": [
-      42.2544,
-      2.979
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3283,
-    "evolution5ans": 14,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Golfs à proximité"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 80,
-    "name": "Fornells de la Selva",
-    "slug": "fornells-de-la-selva",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Fornells+De+La+Selva",
-    "coordinates": [
-      42.2333,
-      2.9637
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3558,
-    "evolution5ans": 17,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 81,
-    "name": "Caldes de Malavella",
-    "slug": "caldes-de-malavella",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Caldes+De+Malavella",
-    "coordinates": [
-      42.2709,
-      2.9316
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2436,
-    "evolution5ans": 17,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Golfs à proximité"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 82,
-    "name": "Sils",
-    "slug": "sils",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Sils",
-    "coordinates": [
-      42.2618,
-      2.9436
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2777,
-    "evolution5ans": 33,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 83,
-    "name": "Vidreres",
-    "slug": "vidreres",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vidreres",
-    "coordinates": [
-      42.2192,
-      2.9723
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3498,
-    "evolution5ans": 22,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 84,
-    "name": "Maçanet de la Selva",
-    "slug": "macanet-de-la-selva",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Macanet+De+La+Selva",
-    "coordinates": [
-      42.2592,
-      2.9731
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2304,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 85,
-    "name": "Banyoles",
-    "slug": "banyoles",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Banyoles",
-    "coordinates": [
-      42.2826,
-      3.0408
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2290,
-    "evolution5ans": 14,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 86,
-    "name": "Porqueres",
-    "slug": "porqueres",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Porqueres",
-    "coordinates": [
-      42.263,
-      2.9809
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2736,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 87,
-    "name": "Besalú",
-    "slug": "besalu",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Besalu",
-    "coordinates": [
-      42.3143,
-      3.0329
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3075,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 88,
-    "name": "Figueres",
-    "slug": "figueres",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Figueres",
-    "coordinates": [
-      42.2517,
-      2.9952
-    ],
-    "description": "Ville dotée de tous les services, bien connectée et attractive toute l'année.",
-    "prixMoyenM2": 5215,
-    "evolution5ans": 16,
-    "typeDeBienMajoritaire": "Appartements urbains",
-    "services": [
-      "Hôpitaux",
-      "Universités",
-      "Gare AVE"
-    ],
-    "qualiteDeVie": {
-      "securite": "Élevée",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Urbaine dynamique",
-      "atouts": [
-        "Services complets"
-      ]
-    },
-    "scores": {
-      "famille": 8,
-      "retraite": 7,
-      "investissement": 8
-    },
-    "conseilDeLexpert": "Visez la proximité transports et universités pour un mix résidence principale / locatif durable."
-  },
-  {
-    "id": 89,
-    "name": "Vilafant",
-    "slug": "vilafant",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vilafant",
-    "coordinates": [
-      42.3158,
-      3.0811
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3392,
-    "evolution5ans": 31,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 90,
-    "name": "Peralada",
-    "slug": "peralada",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Peralada",
-    "coordinates": [
-      42.2866,
-      3.0203
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2831,
-    "evolution5ans": 25,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Golfs à proximité"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 91,
-    "name": "Garriguella",
-    "slug": "garriguella",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Garriguella",
-    "coordinates": [
-      42.3722,
-      3.0971
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2281,
-    "evolution5ans": 25,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 92,
-    "name": "Vilabertran",
-    "slug": "vilabertran",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vilabertran",
-    "coordinates": [
-      42.3138,
-      3.0524
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2410,
-    "evolution5ans": 25,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 93,
-    "name": "Navata",
-    "slug": "navata",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Navata",
-    "coordinates": [
-      42.3813,
-      3.1258
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3032,
-    "evolution5ans": 33,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 94,
-    "name": "Castelló d'Empúries (poble)",
-    "slug": "castello-dempuries-poble",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Castello+Dempuries+Poble",
-    "coordinates": [
-      42.3888,
-      3.1399
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3484,
-    "evolution5ans": 19,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 95,
-    "name": "Fortià",
-    "slug": "fortia",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Fortia",
-    "coordinates": [
-      42.422,
-      3.1383
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3044,
-    "evolution5ans": 14,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 96,
-    "name": "Riumors",
-    "slug": "riumors",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Riumors",
-    "coordinates": [
-      42.3528,
-      3.1596
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3043,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 97,
-    "name": "Vila-sacra",
-    "slug": "vila-sacra",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Vila+Sacra",
-    "coordinates": [
-      42.3721,
-      3.1558
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2421,
-    "evolution5ans": 26,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 98,
-    "name": "Cabanes",
-    "slug": "cabanes",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Cabanes",
-    "coordinates": [
-      42.4432,
-      3.1729
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2655,
-    "evolution5ans": 20,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 99,
-    "name": "Santa Llogaia d'Àlguema",
-    "slug": "santa-llogaia-dalguema",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Santa+Llogaia+Dalguema",
-    "coordinates": [
-      42.4481,
-      3.143
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 2825,
-    "evolution5ans": 21,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
-  },
-  {
-    "id": 100,
-    "name": "Ullastret",
-    "slug": "ullastret",
-    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vue+de+Ullastret",
-    "coordinates": [
-      42.3993,
-      3.1729
-    ],
-    "description": "Village de l'arrière-pays offrant authenticité et calme à quelques minutes de la côte.",
-    "prixMoyenM2": 3016,
-    "evolution5ans": 24,
-    "typeDeBienMajoritaire": "Maisons de village en pierre",
-    "services": [
-      "Commerces de proximité",
-      "Accès C-31 / AP-7"
-    ],
-    "qualiteDeVie": {
-      "securite": "Bonne",
-      "communauteInternationale": "Présente",
-      "profilDemographique": "Mix familles et expatriés"
-    },
-    "styleDeVie": {
-      "ambiance": "Village authentique",
-      "atouts": [
-        "Plages",
-        "Chemins de ronde"
-      ]
-    },
-    "scores": {
-      "famille": 7,
-      "retraite": 7,
-      "investissement": 7
-    },
-    "conseilDeLexpert": "Cherchez les masies rénovées ou maisons de village avec terrasse pour maximiser l'attrait."
+      "famille": null,
+      "retraite": null,
+      "investissement": null
+    },
+    "conseilDeLexpert": null
   }
 ];

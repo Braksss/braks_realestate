@@ -2,18 +2,21 @@
 "use client";
 
 import { CircleMarker, Tooltip } from 'react-leaflet';
+import geojsonData from '@/data/map-shapes.json';
 
-// Fonction pour la couleur du marqueur
+// Noms des villes qui ont des polygones
+const citiesWithShapes = geojsonData.features.map(f => f.properties.name);
+
 function getScoreColor(score) {
-    if (score > 85) return '#d9480f'; // Très forte opportunité
-    if (score > 70) return '#f97316'; // Forte opportunité
-    if (score > 50) return '#f9b572'; // Opportunité moyenne
-    return '#a1a1aa'; // Faible
+    if (score > 85) return '#d9480f';
+    if (score > 70) return '#f97316';
+    if (score > 50) return '#f9b572';
+    return '#a1a1aa';
 }
 
 export function MarkersLayer({ locations, onZoneClick }) {
-  // On affiche uniquement les villes qui n'ont PAS de polygone
-  const locationsWithoutShape = locations.filter(l => !["Begur", "Roses", "Cadaqués", "Pals", "Lloret de Mar", "Blanes"].includes(l.name));
+  // On filtre pour n'afficher que les villes SANS polygone
+  const locationsWithoutShape = locations.filter(l => !citiesWithShapes.includes(l.name));
   
   return (
     <>

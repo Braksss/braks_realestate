@@ -1,3 +1,4 @@
+// webapp/app/lieux/page.jsx
 "use client";
 
 import { useState, useMemo } from 'react';
@@ -15,11 +16,15 @@ export default function AllLocationsPage() {
       location.name.toLowerCase().includes(searchTerm.toLowerCase())
     ), [searchTerm]);
   
-  // Trouve le bien correspondant à la ville sélectionnée
   const opportunity = useMemo(() => 
     selectedLocation ? biensDisponibles.find(b => b.locationSlug === selectedLocation.slug) : null,
     [selectedLocation]
   );
+  
+  const handleCardClick = (location) => {
+      // Au lieu de créer un lien, on met à jour l'état pour ouvrir la modale
+      setSelectedLocation(location);
+  };
 
   return (
     <>
@@ -43,15 +48,13 @@ export default function AllLocationsPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {filteredLocations.map(loc => (
-            // On passe une fonction pour ouvrir la modale au lieu d'un lien direct
-            <div key={loc.id} onClick={() => setSelectedLocation(loc)}>
+            <div key={loc.id} onClick={() => handleCardClick(loc)} className="cursor-pointer">
               <LocationCard location={loc} />
             </div>
           ))}
         </div>
       </div>
       
-      {/* La modale qui s'affichera au clic */}
       {selectedLocation && (
         <OpportunityModal 
           location={selectedLocation}
