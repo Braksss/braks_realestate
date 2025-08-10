@@ -1,63 +1,44 @@
-/* webapp/components/Navbar.module.css */
-/* Conteneur principal qui positionne la barre */
 .header {
   @apply fixed top-0 left-0 right-0 z-50 p-4;
 }
-
-/* La barre de navigation elle-même, maintenant avec des coins arrondis */
 .navbar {
   @apply flex items-center justify-between max-w-7xl mx-auto px-6 h-16;
   @apply bg-white/80 backdrop-blur-lg;
-  @apply rounded-xl; /* Coins moins prononcés */
-  @apply border border-gray-200; /* Bordure fine */
+  @apply rounded-xl shadow-md;
+  @apply border border-gray-200;
 }
-
 .logo {
   @apply text-2xl font-bold tracking-tighter text-gray-900;
 }
-
 .logoAccent {
   @apply text-orange-500;
 }
-
-/* Conteneur pour les liens de navigation sur ordinateur */
 .desktopNav {
   @apply hidden md:flex items-center gap-8;
 }
-
 .navLink {
   @apply text-gray-600 font-medium hover:text-orange-500 transition-colors relative py-2;
 }
-
-/* Animation de la ligne de survol */
 .navLink::after {
   content: '';
   @apply absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 ease-in-out;
 }
-
 .navLink:hover::after {
   @apply w-full;
 }
-
-/* Conteneur pour les boutons d'action */
 .actions {
   @apply flex items-center gap-4;
 }
-
 .ctaButton {
   @apply hidden sm:inline-block bg-orange-500 text-white font-semibold px-5 py-2 rounded-full hover:bg-orange-600 transition-colors;
 }
-
-/* --- Styles pour le mobile --- */
 .mobileMenuButton {
   @apply md:hidden text-gray-800;
 }
-
 .mobileMenu {
   @apply md:hidden flex flex-col items-center gap-6 py-8 mt-2;
   @apply bg-white/95 backdrop-blur-lg border border-gray-200 rounded-2xl shadow-lg;
 }
-
 .mobileNavLink {
   @apply text-xl font-semibold text-gray-800;
 }

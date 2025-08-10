@@ -1,5 +1,3 @@
-// webapp/app/layout.jsx
-
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
@@ -8,8 +6,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Market Pulse Pro",
-  description: "Trouvez les trésors cachés de la Costa Brava.",
+  title: "Costa Brava Pro-Invest",
+  description: "L'outil d'analyse et de prospection pour l'immobilier sur la Costa Brava.",
 };
 
 export default function RootLayout({ children }) {
@@ -17,16 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className={inter.className}>
         <Navbar />
-        
-        {/*
-          La modification est ici. En appliquant le padding sur une div
-          qui englobe tout le contenu, on s'assure que TOUTES les pages,
-          y compris le dashboard, respectent cet espacement.
-        */}
-        <div className="pt-24">
-            <main>{children}</main>
-        </div>
-        
+        <main className="pt-20">
+            {children}
+        </main>
         <Footer />
       </body>
     </html>

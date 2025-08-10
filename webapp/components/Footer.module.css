@@ -1,17 +1,13 @@
-/* webapp/components/Footer.module.css */
 .footer {
   @apply py-10 text-center bg-gray-50 border-t border-gray-200;
-  @apply text-sm; /* Taille de police légèrement réduite pour la discrétion */
+  @apply text-sm;
 }
-
 .footer p {
   @apply text-gray-600;
 }
-
 .separator {
   @apply text-gray-300;
 }
-
 .adminLink {
   @apply text-gray-500 hover:text-orange-500 hover:underline transition-colors;
 }

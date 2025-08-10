@@ -1,5 +1,6 @@
+/* webapp/components/SocialProof.module.css */
 .section {
-  @apply text-center py-12;
+  @apply text-center py-12 bg-white;
 }
 .title {
   @apply text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8;
@@ -8,5 +9,5 @@
   @apply flex justify-center items-center gap-12 flex-wrap;
 }
 .logos img {
-  @apply h-6 filter grayscale opacity-60;
+  @apply h-6 filter grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all;
 }

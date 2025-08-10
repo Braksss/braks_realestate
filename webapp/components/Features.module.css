@@ -1,52 +1,28 @@
+/* webapp/components/Features.module.css */
 .section {
-  @apply py-20 bg-gray-50; /* Un fond légèrement grisé pour délimiter la section */
+  @apply py-20 bg-gray-50;
 }
-
 .heading {
   @apply text-4xl font-bold tracking-tighter text-gray-900;
 }
-
 .subheading {
   @apply text-lg text-gray-500 max-w-2xl mx-auto mt-4;
 }
-
-/* Le conteneur principal des étapes */
 .stepsContainer {
-  @apply relative grid md:grid-cols-3 gap-x-12 gap-y-16;
+  @apply grid md:grid-cols-3 gap-x-12 gap-y-16;
 }
-
-/* La ligne de connexion (magie du CSS) */
-.stepsContainer::before {
-  content: '';
-  @apply absolute top-10 left-0 right-0 h-px bg-gray-300 hidden md:block;
-  /* On la centre sur l'axe horizontal en ajustant les marges */
-  margin-left: 16.66%; /* 1/6 de la largeur pour commencer après la 1ère moitié du 1er item */
-  margin-right: 16.66%; /* 1/6 de la largeur pour finir avant la 2ème moitié du dernier item */
-}
-
 .step {
-  @apply relative text-center;
+  @apply text-center;
 }
-
 .iconWrapper {
-  @apply relative inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg border-2 border-orange-500 mb-6;
-  /* On le place au-dessus de la ligne de connexion */
-  z-index: 10;
+  @apply inline-flex items-center justify-center w-20 h-20 bg-white rounded-full shadow-lg border-2 border-orange-500 mb-6;
 }
-
 .iconWrapper svg {
-  @apply w-8 h-8 text-orange-500;
+  @apply w-10 h-10 text-orange-500;
 }
-
-/* Les numéros stylisés */
-.stepNumber {
-  @apply absolute -top-3 -right-3 flex items-center justify-center w-8 h-8 bg-orange-500 text-white font-bold text-sm rounded-full;
-}
-
 .stepTitle {
   @apply text-xl font-semibold text-gray-800 mb-2;
 }
-
 .stepDescription {
   @apply text-gray-600;
 }

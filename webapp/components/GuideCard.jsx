@@ -1,3 +1,4 @@
+// webapp/components/GuideCard.jsx
 "use client";
 
 import Link from 'next/link';
@@ -12,8 +13,6 @@ export function GuideCard({ guide }) {
       navigator.share({
         title: guide.title,
         text: guide.excerpt,
-        // --- CORRECTION ICI AUSSI ---
-        // On construit l'URL complète avec le slug
         url: window.location.origin + `/guides/${guide.slug}`,
       }).catch(console.error);
     } else {
@@ -23,8 +22,6 @@ export function GuideCard({ guide }) {
 
   return (
     <div className={styles.card}>
-      {/* --- CORRECTION PRINCIPALE ICI --- */}
-      {/* On remplace guide.url par `/guides/${guide.slug}` */}
       <Link href={`/guides/${guide.slug}`} className={styles.imageLink}>
         <img src={guide.image} alt={guide.title} />
       </Link>
@@ -36,7 +33,6 @@ export function GuideCard({ guide }) {
             </button>
         </div>
         <h3 className={styles.title}>
-          {/* --- ET CORRECTION ICI --- */}
           <Link href={`/guides/${guide.slug}`}>{guide.title}</Link>
         </h3>
         <p className={styles.excerpt}>{guide.excerpt}</p>

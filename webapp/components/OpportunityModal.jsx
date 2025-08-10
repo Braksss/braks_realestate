@@ -1,22 +1,28 @@
 // webapp/components/OpportunityModal.jsx
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLockBodyScroll } from '@/hooks/useLockBodyScroll';
 
-function useEscapeKey(callback) {
+export function OpportunityModal({ opportunite, onClose }) {
+  useLockBodyScroll();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    console.log("Nouveau lead Acheteur:", { ...data, bien_cible: opportunite.titre });
+    setIsSubmitted(true);
+  };
+
   useEffect(() => {
     const handleEsc = (event) => {
-      if (event.key === 'Escape') callback();
+      if (event.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleEsc);
     return () => window.removeEventListener('keydown', handleEsc);
-  }, [callback]);
-}
-
-export function OpportunityModal({ location, bien, onClose }) {
-  useEscapeKey(onClose);
-  useLockBodyScroll();
+  }, [onClose]);
 
   return (
     <div 
@@ -24,41 +30,47 @@ export function OpportunityModal({ location, bien, onClose }) {
       onClick={onClose}
     >
       <div 
-        className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-slide-up" 
+        className="bg-white rounded-2xl w-full max-w-md max-h-[90vh] overflow-y-auto shadow-2xl relative animate-slide-up" 
         onClick={e => e.stopPropagation()}
       >
-        <button onClick={onClose} className="absolute top-3 right-4 text-gray-400 hover:text-gray-800 text-4xl font-light z-10">&times;</button>
+        <button onClick={onClose} className="absolute top-3 right-4 text-gray-400 hover:text-gray-800 text-3xl font-light z-10">&times;</button>
         
-        {bien ? (
-          <div>
-            <img src={bien.image} alt={bien.title} className="w-full h-72 object-cover rounded-t-2xl" />
-            <div className="p-8">
-              <p className="text-sm font-semibold text-orange-500 uppercase tracking-wider">Opportunité à {location.name}</p>
-              <h2 className="text-3xl font-bold my-2 text-gray-900">{bien.title}</h2>
-              <p className="text-2xl text-gray-800 font-light mb-4">{bien.price.toLocaleString('fr-FR')} €</p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {bien.atouts.map(atout => <span key={atout} className="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">{atout}</span>)}
-              </div>
-              <a href="#" className="block w-full text-center bg-orange-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors">
-                Je suis intéressé, organiser une visite
-              </a>
+        <div className="p-8">
+          {!isSubmitted ? (
+            <>
+              <h2 className="text-2xl font-bold text-gray-900">Accès Exclusif</h2>
+              <p className="text-gray-600 my-2">
+                Vous êtes intéressé par : <strong className="text-orange-600">{opportunite.titre}</strong>.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Pour des raisons de confidentialité, les détails ne sont communiqués qu'aux acheteurs qualifiés. Laissez vos coordonnées pour que je puisse vous contacter personnellement.
+              </p>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="sr-only">Nom</label>
+                  <input type="text" name="name" id="name" required placeholder="Votre nom complet" className="w-full p-2 border rounded-md" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="sr-only">Email</label>
+                  <input type="email" name="email" id="email" required placeholder="Votre email" className="w-full p-2 border rounded-md" />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="sr-only">Téléphone</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Votre téléphone (optionnel)" className="w-full p-2 border rounded-md" />
+                </div>
+                <button type="submit" className="w-full bg-orange-500 text-white font-bold py-3 rounded-lg hover:bg-orange-600">
+                  Demander les informations
+                </button>
+              </form>
+            </>
+          ) : (
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-green-800">C'est noté !</h2>
+              <p className="text-lg text-gray-700 my-4">Merci pour votre intérêt. Je vous recontacterai personnellement dans les 24 heures pour discuter de cette opportunité.</p>
+              <button onClick={onClose} className="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-lg hover:bg-gray-300">Fermer</button>
             </div>
-          </div>
-        ) : (
-          <div className="p-8 text-center">
-            <h2 className="text-3xl font-bold my-2 text-gray-900">Vous avez bon goût ! {location.name} est très demandé.</h2>
-            <p className="text-lg text-gray-600 my-4 max-w-lg mx-auto">
-              Aucun bien ne correspond publiquement à ce secteur pour le moment. Les meilleures opportunités ("off-market") ne sont jamais affichées en ligne.
-            </p>
-            <div className="bg-orange-50 border border-orange-200 p-6 rounded-lg mt-6">
-               <h3 className="font-bold text-orange-900 text-lg">Laissez-moi devenir vos yeux sur le marché.</h3>
-               <p className="text-orange-800 my-2">Mandatez-moi pour une recherche personnalisée et gratuite. Je vous donnerai accès à mon réseau et aux biens cachés avant tout le monde.</p>
-               <a href="#" className="inline-block mt-4 bg-orange-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors">
-                Activer ma recherche personnalisée
-              </a>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

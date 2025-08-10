@@ -2,28 +2,21 @@
 .container {
     @apply min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8;
 }
-
 .loginBox {
-    @apply max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-lg;
+    @apply max-w-md w-full space-y-8 bg-white p-10 rounded-2xl shadow-lg border;
 }
-
 .title {
     @apply text-center text-3xl font-bold tracking-tight text-gray-900;
 }
-
 .subtitle {
     @apply mt-2 text-center text-sm text-gray-600;
 }
-
 .input {
     @apply appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm;
 }
-
 .button {
-    /* Le mot 'group' a été retiré ici, ce qui corrige l'erreur */
     @apply relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-colors;
 }
-
 .error {
     @apply text-center text-sm text-red-600;
 }

@@ -4,17 +4,16 @@
 import { GeoJSON } from 'react-leaflet';
 import geojsonData from '@/data/map-shapes.json';
 
-// L'échelle de couleur est maintenant plus professionnelle (Bleu -> Vert -> Jaune -> Rouge)
+// Fonction pour déterminer la couleur en fonction d'une valeur et d'une plage
 function getColor(value, min, max) {
-  if (value === null || value === undefined) return '#e0e0e0'; // Gris pour les zones sans données
+  if (value === null || value === undefined) return '#FFFFFF'; // Gris pour les zones sans données
 
-  // Normalisation de la valeur entre 0 et 1
   const normalized = (max - min === 0) ? 0.5 : (value - min) / (max - min);
 
-  // Dégradé de couleur
-  const r = Math.round(Math.min(255, 510 * normalized));
-  const g = Math.round(Math.min(255, 510 * (1 - normalized)));
-  const b = 0;
+  // Dégradé simple de Bleu (bon) à Rouge (mauvais)
+  const r = Math.round(255 * normalized);
+  const g = 0;
+  const b = Math.round(255 * (1 - normalized));
 
   return `rgb(${r},${g},${b})`;
 }
@@ -30,7 +29,6 @@ export function DataHeatmapLayer({ locations, onZoneClick, dataKey, range }) {
         properties: {
           ...feature.properties,
           dataValue: locationData ? locationData[dataKey] : null,
-          unit: dataKey === 'prixMoyenM2' ? '€' : '%',
           locationData: locationData || null
         }
       };
@@ -41,10 +39,10 @@ export function DataHeatmapLayer({ locations, onZoneClick, dataKey, range }) {
     const value = feature.properties.dataValue;
     return {
       fillColor: getColor(value, range.min, range.max),
-      weight: 1,
+      weight: 1.5,
       opacity: 1,
       color: 'white',
-      fillOpacity: 0.8
+      fillOpacity: 0.7
     };
   };
 
@@ -55,25 +53,14 @@ export function DataHeatmapLayer({ locations, onZoneClick, dataKey, range }) {
           onZoneClick(feature.properties.locationData);
         }
       },
-      mouseover: (e) => {
-        const layer = e.target;
-        layer.setStyle({ weight: 3, color: '#333' });
-        const { name, dataValue, unit } = feature.properties;
-        const displayValue = dataValue !== null ? `${dataValue.toLocaleString('fr-FR')}${unit}` : 'N/A';
-        layer.bindTooltip(`<b>${name}</b><br>${displayValue}`, {
-            permanent: false, direction: 'center', opacity: 0.9,
-        }).openTooltip();
-      },
-      mouseout: (e) => {
-        e.target.setStyle({ weight: 1, color: 'white' });
-        e.target.unbindTooltip();
-      }
+      mouseover: (e) => e.target.setStyle({ weight: 3, color: '#333' }),
+      mouseout: (e) => e.target.setStyle({ weight: 1.5, color: 'white' }),
     });
   };
 
   return (
     <GeoJSON 
-      key={dataKey}
+      key={dataKey} // Important pour forcer le re-rendu quand la couche de données change
       data={enrichedGeoJson} 
       style={styleFeature}
       onEachFeature={onEachFeature}

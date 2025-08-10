@@ -1,4 +1,3 @@
-// app/page.jsx
 import { Hero } from '@/components/Hero';
 import { Features } from '@/components/Features';
 import { GuidesSection } from '@/components/GuidesSection';
@@ -8,10 +7,9 @@ import { SocialProof } from '@/components/SocialProof';
 export default function HomePage() {
   return (
     <>
-      <div className="-mt-24">
+      <div className="-mt-20">
         <Hero />
       </div>
-      
       <SocialProof />
       <Features />
       <GuidesSection />

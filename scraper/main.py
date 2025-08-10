@@ -1,100 +1,88 @@
-# main.py - Script principal pour le scraping des données
+# scraper/main.py
 import requests
 from bs4 import BeautifulSoup
 import json
 import time
 
-# URL de recherche pour les villas à vendre sur la Costa Brava sur Idealista
-BASE_URL = "https://www.idealista.com/fr/recherche-vente-maisons/costa-brava-gerone/"
+# --- CONFIGURATION ---
+# REMPLACEZ "VOTRE_CLE_API_SCRAPINGBEE" PAR LA CLÉ DE VOTRE TABLEAU DE BORD SCRAPINGBEE
+API_KEY = "V2S0MOATW2NJB0HYJ4ORACE73PQMPD51MQGQEI3MWM6S64CIDYRZ87MI6WQOSHZOL0T59MN8ZGPY30UJ"
 
-# Headers pour simuler un navigateur et éviter un blocage
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-}
+# L'URL que nous voulons scraper
+TARGET_URL = "https://www.idealista.com/fr/recherche-vente-maisons/costa-brava-gerone/avec-photos/publie-depuis-1-jour/liste-pagina-{}.htm"
 
-def save_to_supabase(data):
-    """
-    Fonction de substitution pour sauvegarder les données.
-    Dans un vrai projet, ici on se connecterait à Supabase.
-    Pour l'exemple, nous allons écrire dans un fichier JSON.
-    """
-    print(f"--- Sauvegarde de {len(data)} biens dans la base de données (simulation) ---")
-    with open('scraped_data.json', 'w', encoding='utf-8') as f:
+def save_data_to_json(data):
+    filename = 'idealista_listings_yesterday.json'
+    print(f"--- Sauvegarde de {len(data)} biens dans le fichier {filename} ---")
+    with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-    print("Données sauvegardées dans scraped_data.json")
+    print("Sauvegarde terminée.")
 
-
-def scrape_idealista():
-    """
-    Fonction principale pour scraper Idealista.
-    """
-    print("Lancement du scraping sur Idealista pour la Costa Brava...")
+def scrape_idealista_daily():
+    print("Lancement du scraping via le service ScrapingBee (URL corrigée)...")
     
-    try:
-        response = requests.get(BASE_URL, headers=HEADERS)
-        # Lève une exception si le statut n'est pas 200
-        response.raise_for_status()
+    all_properties = []
+    page_number = 1
+    
+    while True:
+        url_to_scrape = TARGET_URL.format(page_number)
+        print(f"Demande de la page {page_number} à ScrapingBee...")
         
-        soup = BeautifulSoup(response.content, 'html.parser')
-        
-        # On cible les cartes de chaque annonce
-        articles = soup.find_all('article', class_='item')
-        
-        print(f"Trouvé {len(articles)} annonces sur la première page.")
-        
-        all_properties = []
-        
-        for article in articles:
-            title_element = article.find('a', class_='item-link')
-            price_element = article.find('span', class_='item-price')
-            details_elements = article.find_all('span', class_='item-detail')
+        try:
+            # --- CORRECTION DE L'URL DE L'API ICI ---
+            # On utilise 'http' au lieu de 'https', comme indiqué dans certaines de leurs documentations.
+            response = requests.get(
+                'http://app.scrapingbee.com/api/v1/',
+                params={
+                    'api_key': API_KEY,
+                    'url': url_to_scrape,
+                    'premium_proxy': 'true',
+                    'country_code': 'es'
+                },
+                timeout=120 # On augmente le temps d'attente maximum
+            )
             
-            # Vérification que les éléments existent
-            if not all( (title_element, price_element, details_elements) ):
-                continue
-
-            title = title_element.get_text(strip=True)
-            price = price_element.get_text(strip=True).replace('€', '').replace('.', '').strip()
-            link = "https://www.idealista.com" + title_element['href']
+            response.raise_for_status()
             
-            surface = None
-            rooms = None
+            soup = BeautifulSoup(response.content, 'html.parser')
+            articles = soup.find_all('article', class_='item')
             
-            if len(details_elements) > 0:
-                rooms_text = details_elements[0].get_text(strip=True)
-                if 'pièce' in rooms_text:
-                    rooms = rooms_text
+            if not articles:
+                print(f"Aucune annonce trouvée sur la page {page_number}. Fin du scraping.")
+                break
             
-            if len(details_elements) > 1:
-                surface_text = details_elements[1].get_text(strip=True)
-                if 'm²' in surface_text:
-                    surface = surface_text
-
-            # On ne garde que les biens avec un prix et un titre
-            if title and price:
-                property_data = {
-                    "id": article.get('data-adid'),
-                    "title": title,
-                    "price": int(price) if price.isdigit() else price,
-                    "rooms": rooms,
-                    "surface": surface,
-                    "link": link,
-                    "source": "Idealista"
-                }
+            print(f"Trouvé {len(articles)} annonces.")
+            
+            # (Le reste du code est inchangé)
+            for article in articles:
+                title_element = article.find('a', class_='item-link')
+                price_element = article.find('span', 'item-price')
+                if not all((title_element, price_element)): continue
+                property_id = article.get('data-adid')
+                if any(prop['id'] == property_id for prop in all_properties): continue
+                title = title_element.get_text(strip=True)
+                price = price_element.get_text(strip=True)
+                link = "https://www.idealista.com" + title_element['href']
+                surface_text = None
+                details_elements = article.find_all('span', class_='item-detail')
+                if len(details_elements) > 1: surface_text = details_elements[1].get_text(strip=True)
+                property_data = { "id": property_id, "title": title, "price": price, "surface": surface_text, "link": link, "source": "Idealista (Daily)" }
                 all_properties.append(property_data)
-                
-            # Petite pause pour ne pas surcharger le serveur
-            time.sleep(0.1)
+            
+            page_number += 1
+            time.sleep(1)
 
-        if all_properties:
-            save_to_supabase(all_properties)
-        else:
-            print("Aucune annonce n'a pu être extraite. La structure du site a peut-être changé.")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Erreur de réseau ou HTTP: {e}")
-    except Exception as e:
-        print(f"Une erreur inattendue est survenue: {e}")
+        except requests.exceptions.RequestException as e:
+            print(f"Erreur de réseau ou de l'API : {e}")
+            break
+            
+    if all_properties:
+        save_data_to_json(all_properties)
+    else:
+        print("Aucune annonce n'a été trouvée pour la journée d'hier.")
 
 if __name__ == "__main__":
-    scrape_idealista()
+    if "VOTRE_CLE_API" in API_KEY:
+        print("ERREUR : Veuillez remplacer 'VOTRE_CLE_API_SCRAPINGBEE' par votre vraie clé dans le fichier main.py")
+    else:
+        scrape_idealista_daily()

@@ -1,11 +1,10 @@
+// webapp/components/Features.jsx
 import styles from './Features.module.css';
 
-// Nous définissons les icônes directement ici pour plus de simplicité.
-// Ce sont des icônes minimalistes et modernes.
 const icons = {
-  explore: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2L12 22"></path><path d="M22 12L2 12"></path></svg>,
-  discover: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><circle cx="12" cy="12" r="7"></circle><line x1="12" y1="2" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="22"></line><line x1="2" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="22" y2="12"></line></svg>,
-  connect: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>,
+  data: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3v18h18" /><path d="M18.7 8a6 6 0 0 0-8.4-8.4" /><path d="M12.3 13.7a6 6 0 0 0 8.4 8.4" /></svg>,
+  target: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>,
+  handshake: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M16 8.5L12 11L8 8.5" /><path d="M9 14.5a2.5 2.5 0 1 1 -5 0a2.5 2.5 0 0 1 5 0Z" /><path d="M15 14.5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1 -5 0Z" /><path d="M4 12v-2a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v2" /></svg>,
 };
 
 export function Features() {
@@ -13,41 +12,29 @@ export function Features() {
     <section className={styles.section}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className={styles.heading}>Votre projet immobilier, simplifié</h2>
+          <h2 className={styles.heading}>Un service, trois piliers</h2>
           <p className={styles.subheading}>
-            Un parcours en trois étapes claires pour trouver le lieu qui vous ressemble vraiment.
+            Je transforme la recherche immobilière en une démarche stratégique et éclairée.
           </p>
         </div>
 
         <div className={styles.stepsContainer}>
-          {/* Étape 1 */}
           <div className={styles.step}>
-            <div className={styles.iconWrapper}>
-              <span className={styles.stepNumber}>1</span>
-              {icons.explore}
-            </div>
-            <h3 className={styles.stepTitle}>Explorez les données</h3>
-            <p className={styles.stepDescription}>Naviguez sur notre carte interactive et visualisez les prix, les tendances et les atouts de chaque ville.</p>
+            <div className={styles.iconWrapper}>{icons.data}</div>
+            <h3 className={styles.stepTitle}>1. Analyse de Données</h3>
+            <p className={styles.stepDescription}>Accédez à des cartes de chaleur exclusives sur les prix, les rendements locatifs et les tendances pour identifier les vraies zones de potentiel.</p>
           </div>
 
-          {/* Étape 2 */}
           <div className={styles.step}>
-            <div className={styles.iconWrapper}>
-              <span className={styles.stepNumber}>2</span>
-              {icons.discover}
-            </div>
-            <h3 className={styles.stepTitle}>Découvrez votre zone idéale</h3>
-            <p className={styles.stepDescription}>Utilisez les filtres pour affiner votre recherche et identifiez les localités qui matchent avec votre projet de vie.</p>
+            <div className={styles.iconWrapper}>{icons.target}</div>
+            <h3 className={styles.stepTitle}>2. Prospection Ciblée</h3>
+            <p className={styles.stepDescription}>Grâce à la veille et aux données, je vous donne accès au marché "off-market" : les biens qui ne sont pas encore sur internet.</p>
           </div>
 
-          {/* Étape 3 */}
           <div className={styles.step}>
-            <div className={styles.iconWrapper}>
-              <span className={styles.stepNumber}>3</span>
-              {icons.connect}
-            </div>
-            <h3 className={styles.stepTitle}>Contactez un expert</h3>
-            <p className={styles.stepDescription}>Une fois votre sélection faite, bénéficiez d'un accompagnement gratuit pour concrétiser votre achat.</p>
+            <div className={styles.iconWrapper}>{icons.handshake}</div>
+            <h3 className={styles.stepTitle}>3. Accompagnement Expert</h3>
+            <p className={styles.stepDescription}>De la négociation à la signature, je sécurise chaque étape de votre acquisition en Espagne, en défendant vos intérêts.</p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
+/* webapp/components/AboutSection.module.css */
 .section {
-  @apply py-20 px-6;
+  @apply py-20 px-6 bg-white;
 }
 .title {
   @apply text-4xl font-bold tracking-tighter mb-6;

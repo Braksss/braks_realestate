@@ -8,20 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'secondary-text': '#4B5563', // La couleur pour le texte secondaire
-        'accent': '#F97316', // Vous pourriez aussi définir votre couleur orange ici
+        'secondary-text': '#4B5563',
+        'accent': '#F97316',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      // --- SECTION DE PERSONNALISATION DE LA TYPOGRAPHIE ---
       typography: ({ theme }) => ({
-        // On cible la classe "prose" par défaut
         DEFAULT: {
           css: {
-            // Variables de couleur pour le texte
             '--tw-prose-body': theme('colors.gray[700]'),
             '--tw-prose-headings': theme('colors.gray[900]'),
             '--tw-prose-links': theme('colors.orange[500]'),
@@ -29,20 +26,16 @@ module.exports = {
             '--tw-prose-bullets': theme('colors.orange[400]'),
             '--tw-prose-quotes': theme('colors.gray[800]'),
             '--tw-prose-quote-borders': theme('colors.orange[300]'),
-            
-            // Style personnalisé pour les titres h2
             h2: {
               fontWeight: '700',
               borderBottom: `2px solid ${theme('colors.gray.200')}`,
               paddingBottom: theme('spacing.2'),
               marginTop: theme('spacing.16'),
             },
-            // Style personnalisé pour les titres h3
             h3: {
               fontWeight: '600',
               marginTop: theme('spacing.12'),
             },
-            // Style personnalisé pour les citations
             blockquote: {
               fontStyle: 'normal',
               borderLeftWidth: '0.25rem',
@@ -50,7 +43,6 @@ module.exports = {
               marginLeft: '0',
               marginRight: '0',
             },
-            // On retire les guillemets automatiques des citations pour un look plus épuré
             'blockquote p:first-of-type::before': { content: '""' },
             'blockquote p:last-of-type::after': { content: '""' },
           },

@@ -4,32 +4,27 @@
     {
       "type": "Feature",
       "properties": { "name": "Begur" },
-      "geometry": { "type": "Polygon", "coordinates": [ [ [3.20, 41.95], [3.22, 41.95], [3.22, 41.97], [3.20, 41.97], [3.20, 41.95] ] ] }
+      "geometry": { "type": "Polygon", "coordinates": [ [ [3.19, 41.94], [3.23, 41.94], [3.23, 41.98], [3.19, 41.98], [3.19, 41.94] ] ] }
     },
     {
       "type": "Feature",
       "properties": { "name": "Roses" },
-      "geometry": { "type": "Polygon", "coordinates": [ [ [3.17, 42.26], [3.19, 42.26], [3.19, 42.28], [3.17, 42.28], [3.17, 42.26] ] ] }
+      "geometry": { "type": "Polygon", "coordinates": [ [ [3.16, 42.25], [3.20, 42.25], [3.20, 42.29], [3.16, 42.29], [3.16, 42.25] ] ] }
     },
     {
       "type": "Feature",
       "properties": { "name": "Cadaqués" },
-      "geometry": { "type": "Polygon", "coordinates": [ [ [3.27, 42.28], [3.29, 42.28], [3.29, 42.30], [3.27, 42.30], [3.27, 42.28] ] ] }
+      "geometry": { "type": "Polygon", "coordinates": [ [ [3.26, 42.27], [3.30, 42.27], [3.30, 42.31], [3.26, 42.31], [3.26, 42.27] ] ] }
     },
     {
       "type": "Feature",
       "properties": { "name": "Pals" },
-      "geometry": { "type": "Polygon", "coordinates": [ [ [3.14, 41.97], [3.16, 41.97], [3.16, 41.99], [3.14, 41.99], [3.14, 41.97] ] ] }
+      "geometry": { "type": "Polygon", "coordinates": [ [ [3.13, 41.96], [3.17, 41.96], [3.17, 42.00], [3.13, 42.00], [3.13, 41.96] ] ] }
     },
     {
       "type": "Feature",
       "properties": { "name": "Lloret de Mar" },
-      "geometry": { "type": "Polygon", "coordinates": [ [ [2.84, 41.69], [2.86, 41.69], [2.86, 41.71], [2.84, 41.71], [2.84, 41.69] ] ] }
-    },
-    {
-      "type": "Feature",
-      "properties": { "name": "Blanes" },
-      "geometry": { "type": "Polygon", "coordinates": [ [ [2.79, 41.67], [2.81, 41.67], [2.81, 41.69], [2.79, 41.69], [2.79, 41.67] ] ] }
+      "geometry": { "type": "Polygon", "coordinates": [ [ [2.82, 41.68], [2.88, 41.68], [2.88, 41.72], [2.82, 41.72], [2.82, 41.68] ] ] }
     }
   ]
 }

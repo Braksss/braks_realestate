@@ -1,7 +1,6 @@
 /* webapp/components/Hero.module.css */
-/* --- Conteneur principal et Fond --- */
 .heroSection {
-  @apply relative min-h-screen flex items-center px-6 text-black; /* Texte noir pour contraste sur fond clair */
+  @apply relative min-h-[85vh] flex items-center px-6 text-black;
 }
 
 .heroBackground {
@@ -13,26 +12,21 @@
 }
 
 .heroOverlay {
-  @apply absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent; /* Dégradé vers le blanc */
+  @apply absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent;
 }
 
-
-/* --- Bulle de texte principale --- */
 .textBubble {
-  @apply bg-transparent backdrop-blur-none p-0 md:max-w-2xl border-none; /* Suppression de l'effet de verre et plus large */
+  @apply bg-transparent p-0 md:max-w-2xl;
 }
 
 .textBubble h1 {
   @apply text-5xl md:text-6xl font-bold tracking-tighter leading-tight mb-4 text-gray-900;
-  text-shadow: none;
 }
 
 .textBubble p {
   @apply text-lg text-gray-600 mb-8;
 }
 
-
-/* --- Bouton d'appel à l'action --- */
 .heroCtaButton {
   @apply inline-block bg-orange-500 text-white font-bold text-lg px-8 py-4 rounded-full;
   @apply hover:bg-orange-600 transition-all duration-300 transform hover:scale-105;

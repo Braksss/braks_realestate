@@ -2,44 +2,27 @@
 .container {
   @apply max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-12 gap-16;
 }
-
 .article {
   @apply lg:col-span-8;
 }
-
 .title {
   @apply text-4xl md:text-5xl font-bold tracking-tighter text-gray-900 leading-tight;
 }
-
 .mainImage {
   @apply w-full h-auto max-h-[500px] object-cover rounded-2xl shadow-xl mb-12;
 }
-
 .sidebar {
   @apply lg:col-span-4;
 }
-
 .sidebarStickyContent {
   @apply sticky top-32;
 }
-
 .sidebarTitle {
   @apply text-sm font-semibold tracking-wider uppercase text-gray-500 mb-4;
 }
-
-.ctaBox {
-  @apply mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-200;
-}
-
-.ctaButton {
-  @apply block w-full bg-orange-500 text-white text-center font-bold py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors;
-}
-
-/* --- Styles pour l'encart promotionnel --- */
 .toolPromoBox {
-  @apply mt-8 p-6 bg-blue-50 rounded-2xl border border-blue-200;
+  @apply mt-8 p-6 bg-orange-50 rounded-2xl border border-orange-200;
 }
-
 .toolPromoButton {
   @apply block w-full bg-white text-orange-600 text-center font-bold py-3 px-4 rounded-lg border-2 border-orange-500 hover:bg-orange-50 transition-colors;
 }

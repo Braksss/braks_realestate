@@ -1,18 +1,13 @@
 /* webapp/components/ClientDetailPanel.module.css */
 .panel {
-    @apply absolute top-0 right-0 z-[1000] w-full md:w-96 h-full bg-white shadow-2xl;
-    @apply transform translate-x-0 transition-transform duration-300 ease-in-out;
-    @apply border-l border-gray-200;
+    @apply bg-white h-full w-full;
 }
-
 .subtitle {
     @apply text-sm font-semibold text-gray-500 uppercase tracking-wider;
 }
-
 .infoText {
     @apply text-base text-gray-800 mt-1;
 }
-
 .pepiteCard {
     @apply bg-orange-50 border border-orange-200 p-3 rounded-lg;
 }

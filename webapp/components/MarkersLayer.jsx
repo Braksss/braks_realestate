@@ -4,18 +4,11 @@
 import { CircleMarker, Tooltip } from 'react-leaflet';
 import geojsonData from '@/data/map-shapes.json';
 
-// Noms des villes qui ont des polygones
+// Noms des villes qui ont déjà des polygones
 const citiesWithShapes = geojsonData.features.map(f => f.properties.name);
 
-function getScoreColor(score) {
-    if (score > 85) return '#d9480f';
-    if (score > 70) return '#f97316';
-    if (score > 50) return '#f9b572';
-    return '#a1a1aa';
-}
-
 export function MarkersLayer({ locations, onZoneClick }) {
-  // On filtre pour n'afficher que les villes SANS polygone
+  // On ne garde que les localisations qui n'ont PAS de polygone défini
   const locationsWithoutShape = locations.filter(l => !citiesWithShapes.includes(l.name));
   
   return (
@@ -24,19 +17,19 @@ export function MarkersLayer({ locations, onZoneClick }) {
         <CircleMarker
           key={location.id}
           center={location.coordinates}
-          radius={8}
+          radius={6}
           pathOptions={{
-            color: getScoreColor(location.opportunityIndex),
-            weight: 2,
-            fillColor: getScoreColor(location.opportunityIndex),
-            fillOpacity: 0.8,
+            color: '#333',
+            weight: 1,
+            fillColor: '#F97316',
+            fillOpacity: 0.9,
           }}
           eventHandlers={{
             click: () => onZoneClick(location),
           }}
         >
           <Tooltip>
-            <span>{location.name}<br/>Score: {location.opportunityIndex}%</span>
+            <span>{location.name}</span>
           </Tooltip>
         </CircleMarker>
       ))}

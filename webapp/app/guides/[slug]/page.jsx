@@ -1,9 +1,17 @@
 // webapp/app/guides/[slug]/page.jsx
 import { guides } from '@/data/guides';
 import styles from './SingleGuidePage.module.css';
+import Link from 'next/link';
 
 function getGuideData(slug) {
   return guides.find(guide => guide.slug === slug);
+}
+
+// Génère les pages statiques au moment du build
+export async function generateStaticParams() {
+  return guides.map((guide) => ({
+    slug: guide.slug,
+  }));
 }
 
 function GuideSidebar({ guide }) {
@@ -21,28 +29,17 @@ function GuideSidebar({ guide }) {
           </div>
         </div>
         
-        <div className={styles.ctaBox}>
-          <h4 className="font-bold text-lg text-gray-900">Prêt à passer à l'action ?</h4>
-          <p className="text-sm text-gray-600 mt-2 mb-4">
-            Discutons de votre projet. Je vous offre un premier appel stratégique pour clarifier vos objectifs.
-          </p>
-          <a href="#" className={styles.ctaButton}>
-            Planifier un appel gratuit
-          </a>
-        </div>
-
-        {/* --- ENCART PROMOTIONNEL AJOUTÉ --- */}
         <div className={styles.toolPromoBox}>
             <div className="flex items-center gap-3 text-orange-500">
                 <MapIcon />
-                <h4 className="font-bold text-lg">Votre outil d'expert</h4>
+                <h4 className="font-bold text-lg">Votre Outil d'Expert</h4>
             </div>
             <p className="text-sm text-gray-600 mt-2 mb-4">
                 Explorez les données du marché en temps réel sur notre carte interactive.
             </p>
-            <a href="/explorateur" className={styles.toolPromoButton}>
-                Lancer l'explorateur
-            </a>
+            <Link href="/explorateur" className={styles.toolPromoButton}>
+                Lancer l'Analyseur
+            </Link>
         </div>
       </div>
     </aside>
@@ -53,6 +50,7 @@ export default function GuidePage({ params }) {
   const guide = getGuideData(params.slug);
 
   if (!guide) {
+    // Dans un vrai projet, on utiliserait notFound() de Next.js
     return <div>Guide non trouvé</div>;
   }
 

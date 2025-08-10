@@ -15,7 +15,7 @@ export default function OpportunitesPage() {
                 <div className="text-center mb-12">
                     <h1 className="text-5xl font-bold tracking-tighter mb-4">Le Marché Confidentiel</h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Accédez à une sélection d'opportunités "off-market" et de biens représentatifs de ce que mon réseau peut vous proposer.
+                        Les meilleures opportunités ne sont jamais publiées. Voici un aperçu de ce que mon réseau peut vous proposer.
                     </p>
                 </div>
 
@@ -27,10 +27,8 @@ export default function OpportunitesPage() {
             </div>
 
             {selectedOpportunite && (
-                // On réutilise la modale, mais en version "formulaire de contact"
                 <OpportunityModal 
-                    location={{ name: selectedOpportunite.localisation }}
-                    bien={null} // On force le scénario "pas de bien" pour afficher le formulaire
+                    opportunite={selectedOpportunite}
                     onClose={() => setSelectedOpportunite(null)}
                 />
             )}
