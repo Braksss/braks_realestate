@@ -1,16 +1,14 @@
 /* webapp/components/LocationIdentityCard.module.css */
 .card {
-    @apply bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row transition-shadow hover:shadow-2xl;
+    @apply bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-200;
+    cursor: pointer;
 }
-.image {
-    @apply w-full h-48 md:h-full object-cover;
+.card:hover {
+    @apply shadow-lg border-orange-400;
 }
 .title {
-    @apply text-2xl font-bold text-gray-900;
+    @apply text-lg font-bold text-gray-900;
 }
 .description {
-    @apply text-sm text-gray-500 mb-2;
-}
-.ctaButton {
-    @apply inline-block bg-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors;
+    @apply text-xs text-gray-500 mt-1;
 }

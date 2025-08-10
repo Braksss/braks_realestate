@@ -3,7 +3,13 @@
 
 import styles from './LocationInfoPanel.module.css';
 
+// Sous-composant pour la barre de données, maintenant plus robuste
 const DataBar = ({ label, value, average, unit = '' }) => {
+    // Si la valeur est nulle ou non définie, on n'affiche rien.
+    if (value === null || typeof value === 'undefined') {
+        return null;
+    }
+
     const isFavorable = label.includes('Prix') ? value < average : value > average;
     const widthPercentage = Math.min(100, (value / (average * 2)) * 100);
 
@@ -11,7 +17,8 @@ const DataBar = ({ label, value, average, unit = '' }) => {
         <div>
             <div className="flex justify-between items-center text-sm mb-1">
                 <span className="text-gray-600">{label}</span>
-                <span className="font-bold text-gray-800">{value.toLocaleString('fr-FR')}{unit}</span>
+                {/* On vérifie que 'value' est un nombre avant d'appeler toLocaleString */}
+                <span className="font-bold text-gray-800">{typeof value === 'number' ? value.toLocaleString('fr-FR') : value}{unit}</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2 relative group">
                 <div 
@@ -21,7 +28,7 @@ const DataBar = ({ label, value, average, unit = '' }) => {
                 <div 
                     className="absolute h-full top-0 border-r-2 border-dashed border-gray-400" 
                     style={{ left: '50%' }} 
-                    title={`Moyenne régionale: ${average.toLocaleString('fr-FR')}${unit}`}
+                    title={`Moyenne régionale: ${typeof average === 'number' ? average.toLocaleString('fr-FR') : average}${unit}`}
                 ></div>
             </div>
         </div>
@@ -32,11 +39,11 @@ export function LocationInfoPanel({ location, onClose, displayScore, regionAvera
   const panelClasses = `${styles.panel} ${location ? styles.panelVisible : ''}`;
 
   if (!location) {
-    return <div className={panelClasses}></div>;
+    return null; // On ne rend rien si aucune location n'est sélectionnée
   }
   
   return (
-    <div className={panelClasses}>
+    <aside className={panelClasses}>
       <div className={styles.header}>
         <img src={location.image} alt={`Vue de ${location.name}`} className={styles.image} />
         <button onClick={onClose} className={styles.closeButton}>&times;</button>
@@ -68,7 +75,7 @@ export function LocationInfoPanel({ location, onClose, displayScore, regionAvera
                 <div>
                     <h4 className="font-semibold text-green-700 mb-1">Points Forts</h4>
                     <ul className="list-disc list-inside text-gray-600 space-y-1">
-                        {location.styleDeVie.atouts.slice(0, 3).map(atout => <li key={atout}>{atout}</li>)}
+                        {location.styleDeVie?.atouts?.slice(0, 3).map(atout => <li key={atout}>{atout}</li>)}
                     </ul>
                 </div>
                 <div>
@@ -76,7 +83,6 @@ export function LocationInfoPanel({ location, onClose, displayScore, regionAvera
                     <ul className="list-disc list-inside text-gray-600 space-y-1">
                          <li>Marché très prisé</li>
                          <li>Activité saisonnière</li>
-                         <li>Accès parfois difficile</li>
                     </ul>
                 </div>
             </div>
@@ -93,6 +99,6 @@ export function LocationInfoPanel({ location, onClose, displayScore, regionAvera
           Trouver une opportunité à {location.name}
         </button>
       </div>
-    </div>
+    </aside>
   );
 }

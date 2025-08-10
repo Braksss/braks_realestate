@@ -1,4 +1,4 @@
-// app/layout.js
+// webapp/app/layout.jsx
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,10 +19,13 @@ export default function RootLayout({ children }) {
         <Navbar />
         
         {/*
-          On applique un padding-top global ici.
-          Cela décale TOUT le contenu vers le bas.
+          La modification est ici. En appliquant le padding sur une div
+          qui englobe tout le contenu, on s'assure que TOUTES les pages,
+          y compris le dashboard, respectent cet espacement.
         */}
-        <main className="pt-24">{children}</main>
+        <div className="pt-24">
+            <main>{children}</main>
+        </div>
         
         <Footer />
       </body>

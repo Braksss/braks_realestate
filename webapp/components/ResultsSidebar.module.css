@@ -1,0 +1,31 @@
+/* webapp/components/ResultsSidebar.module.css */
+.container {
+    @apply p-2;
+}
+.card {
+    @apply flex gap-4 p-2 rounded-lg cursor-pointer transition-colors duration-150 border-2 border-transparent;
+}
+.card:hover {
+    @apply bg-orange-50;
+}
+.cardSelected {
+    @apply bg-red-50 border-red-400;
+}
+.cardImage {
+    @apply w-24 h-24 object-cover rounded-md flex-shrink-0 bg-gray-100;
+}
+.cardContent {
+    @apply flex flex-col;
+}
+.cardTitle {
+    @apply font-bold text-gray-800;
+}
+.cardDescription {
+    @apply text-xs text-gray-500 mt-1 flex-grow;
+}
+.cardInfo {
+    @apply flex gap-4 text-xs font-semibold mt-2;
+}
+.emptyState {
+    @apply text-center p-8 text-gray-600;
+}

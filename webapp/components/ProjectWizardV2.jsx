@@ -16,23 +16,28 @@ const stylesDeVie = [
 
 export function ProjectWizardV2({ criteria, onCriteriaChange }) {
 
+    // Fonction unifiée pour mettre à jour n'importe quel champ
+    const updateCriteria = (field, value) => {
+        onCriteriaChange({ ...criteria, [field]: value });
+    };
+
     const handleStyleChange = (styleId) => {
         const newStyles = criteria.styleDeVie.includes(styleId)
             ? criteria.styleDeVie.filter(s => s !== styleId)
             : [...criteria.styleDeVie, styleId];
-        onCriteriaChange({ ...criteria, styleDeVie: newStyles });
+        updateCriteria('styleDeVie', newStyles);
     };
 
     return (
         <div>
             <h2 className="text-xl font-bold mb-1 text-gray-900">Votre Projet Idéal</h2>
-            <p className="text-gray-500 mb-6 text-sm">Répondez à ces questions pour trouver les lieux qui vous ressemblent.</p>
+            <p className="text-gray-500 mb-6 text-sm">Affinez votre recherche pour trouver les lieux qui vous ressemblent.</p>
 
-            <div className="mb-8">
-                <label className="block text-base font-semibold text-gray-800 mb-3">1. Quel est votre projet principal ?</label>
+            <div className="mb-6">
+                <label className="block text-base font-semibold text-gray-800 mb-3">1. Quel est votre profil ?</label>
                 <div className="grid grid-cols-1 gap-2">
                     {profiles.map(p => (
-                        <button key={p.id} onClick={() => onCriteriaChange({ ...criteria, profil: p.id })}
+                        <button key={p.id} onClick={() => updateCriteria('profil', p.id)}
                             className={`p-3 rounded-lg border-2 text-left transition-all ${criteria.profil === p.id ? 'border-orange-500 bg-orange-50' : 'border-gray-200 hover:border-gray-400'}`}>
                             <span className={`font-semibold ${criteria.profil === p.id ? 'text-orange-600' : 'text-gray-700'}`}>{p.name}</span>
                         </button>
@@ -40,8 +45,8 @@ export function ProjectWizardV2({ criteria, onCriteriaChange }) {
                 </div>
             </div>
 
-            <div className="mb-8">
-                <label className="block text-base font-semibold text-gray-800 mb-3">2. Quel style de vie recherchez-vous ?</label>
+            <div className="mb-6">
+                <label className="block text-base font-semibold text-gray-800 mb-3">2. Quel style de vie ?</label>
                  <div className="flex flex-wrap gap-2">
                     {stylesDeVie.map(s => (
                         <button key={s.id} onClick={() => handleStyleChange(s.id)}
@@ -53,8 +58,10 @@ export function ProjectWizardV2({ criteria, onCriteriaChange }) {
             </div>
             
             <div>
-                <label htmlFor="budget" className="block text-base font-semibold text-gray-800 mb-3">3. Quel est votre budget approximatif ?</label>
-                <span className="font-bold text-orange-600 text-lg">{criteria.budget.toLocaleString('fr-FR')} €</span>
+                <label htmlFor="budget" className="block text-base font-semibold text-gray-800 mb-3">3. Votre budget approximatif ?</label>
+                <div className="text-center">
+                    <span className="font-bold text-orange-600 text-2xl tracking-tighter">{criteria.budget.toLocaleString('fr-FR')} €</span>
+                </div>
                 <input 
                     type="range" 
                     id="budget"
@@ -62,7 +69,7 @@ export function ProjectWizardV2({ criteria, onCriteriaChange }) {
                     max="2000000" 
                     step="50000" 
                     value={criteria.budget} 
-                    onChange={(e) => onCriteriaChange({ ...criteria, budget: parseInt(e.target.value, 10) })} 
+                    onChange={(e) => updateCriteria('budget', parseInt(e.target.value, 10))} 
                     className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-500 mt-2" 
                 />
             </div>

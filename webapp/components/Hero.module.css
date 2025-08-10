@@ -1,79 +1,39 @@
+/* webapp/components/Hero.module.css */
 /* --- Conteneur principal et Fond --- */
 .heroSection {
-  @apply relative min-h-screen flex items-center px-6 overflow-hidden text-white;
+  @apply relative min-h-screen flex items-center px-6 text-black; /* Texte noir pour contraste sur fond clair */
 }
 
 .heroBackground {
-  @apply absolute inset-0 z-[-1]; /* On le place en arrière-plan */
+  @apply absolute inset-0 z-[-1];
 }
 
 .heroBackground img {
   @apply w-full h-full object-cover;
 }
 
-/* On ajoute un dégradé sombre pour améliorer la lisibilité du texte */
 .heroOverlay {
-  @apply absolute inset-0 bg-gradient-to-t from-gray-900/60 to-gray-900/20;
+  @apply absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent; /* Dégradé vers le blanc */
 }
 
 
 /* --- Bulle de texte principale --- */
 .textBubble {
-  /* Effet de verre dépoli plus prononcé */
-  @apply bg-black/20 backdrop-blur-xl p-8 md:p-12 rounded-3xl md:max-w-xl;
-  @apply border border-white/20; /* Bordure subtile pour un look premium */
+  @apply bg-transparent backdrop-blur-none p-0 md:max-w-2xl border-none; /* Suppression de l'effet de verre et plus large */
 }
 
 .textBubble h1 {
-  @apply text-4xl md:text-5xl font-bold tracking-tighter leading-tight mb-4;
-  /* Ombre portée pour détacher le texte du fond */
-  text-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+  @apply text-5xl md:text-6xl font-bold tracking-tighter leading-tight mb-4 text-gray-900;
+  text-shadow: none;
 }
 
 .textBubble p {
-  @apply text-lg mb-8 opacity-90;
+  @apply text-lg text-gray-600 mb-8;
 }
 
 
 /* --- Bouton d'appel à l'action --- */
 .heroCtaButton {
-  @apply inline-block bg-orange-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg;
+  @apply inline-block bg-orange-500 text-white font-bold text-lg px-8 py-4 rounded-full;
   @apply hover:bg-orange-600 transition-all duration-300 transform hover:scale-105;
-}
-
-
-/* --- Carte d'image flottante --- */
-.imageCard {
-  @apply absolute bottom-10 right-10 hidden lg:block; /* Caché sur tablette, visible sur grand écran */
-}
-
-.imageCard > div {
-  @apply bg-white/90 backdrop-blur-xl p-5 rounded-2xl text-gray-800 shadow-2xl w-80;
-  @apply border border-white/30;
-}
-
-.imageCard img {
-  @apply w-full h-48 object-cover rounded-xl mb-4;
-}
-
-.imageCard h3 {
-  @apply text-xl font-bold text-gray-900;
-}
-
-.imageCard p {
-  @apply text-gray-600 text-sm;
-}
-
-
-/* --- Preuve Sociale --- */
-.socialProof {
-  @apply mt-10 pt-6 border-t border-white/20;
-}
-
-.proofLogos {
-  @apply flex justify-center md:justify-start items-center gap-8 text-white/70;
-}
-
-.proofLogos svg {
-  @apply h-5 transition-opacity hover:opacity-100;
 }

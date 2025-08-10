@@ -1,0 +1,12 @@
+/* webapp/components/DashboardView.module.css */
+.dashboardContainer {
+    @apply flex h-full border border-gray-200 rounded-xl overflow-hidden bg-white;
+}
+
+.mainContent {
+    @apply flex-grow h-full p-2;
+}
+
+.mapContainer {
+    @apply w-full h-full rounded-lg overflow-hidden;
+}
